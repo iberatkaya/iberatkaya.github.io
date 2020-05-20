@@ -10,9 +10,10 @@ export default function NavBar() {
     let launchLink = (str: string) => window.open(str, "_blank");
 
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
-            <Nav.Link style={linkStyle} href="home">Home</Nav.Link>
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
+            <Nav.Link style={linkStyle} href="/">Home</Nav.Link>
             <Nav.Link style={linkStyle} href="projects">Projects</Nav.Link>
+            <Nav.Link style={linkStyle} href="about">About</Nav.Link>
             <Navbar.Toggle/>
             <Navbar.Collapse>
                 <Nav className="ml-auto" style={{alignItems: "center"}}>

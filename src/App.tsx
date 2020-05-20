@@ -1,13 +1,10 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Col from 'react-bootstrap/Col';
-import Navbar from './components/NavBar';
+import AppNav from './AppNav';
 
 function App() {
   return (
     <div>
-      <Navbar/>
-      
+      <AppNav/>
     </div>
   );
 }
