@@ -6,7 +6,6 @@ const Fade = require('react-reveal/Fade');
 
 export default function Home() {
 
-
     return (
         <Container fluid style={{height: '90vh', display: 'flex'}}>
             <Row style={{margin: 'auto'}}>
