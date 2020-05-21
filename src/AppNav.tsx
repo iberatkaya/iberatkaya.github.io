@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route
 } from "react-router-dom";
 import Home from "./screens/Home";
@@ -9,9 +9,9 @@ import Projects from "./screens/Projects";
 
 export default function App() {
   return (
-    <Router>
+    <Router hashType="slash">
         <NavBar/>
-        <Route exact path="/projects">
+        <Route path="/projects">
           <Projects/>
         </Route>
         <Route exact path="/">

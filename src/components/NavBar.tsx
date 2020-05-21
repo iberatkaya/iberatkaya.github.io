@@ -11,9 +11,9 @@ export default function NavBar() {
 
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
-            <Nav.Link style={linkStyle} href="/">Home</Nav.Link>
-            <Nav.Link style={linkStyle} href="projects">Projects</Nav.Link>
-            <Nav.Link style={linkStyle} href="about">About</Nav.Link>
+            <Nav.Link style={linkStyle} href="#/">Home</Nav.Link>
+            <Nav.Link style={linkStyle} href="#/projects">Projects</Nav.Link>
+            <Nav.Link style={linkStyle} href="#/about">About</Nav.Link>
             <Navbar.Toggle/>
             <Navbar.Collapse>
                 <Nav className="ml-auto" style={{alignItems: "center"}}>
