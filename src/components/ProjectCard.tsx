@@ -109,7 +109,7 @@ export default function ProjectCard(props: Props) {
                     <div>
                         <Card.Body style={{paddingTop: '0.1rem', paddingBottom: '0.1rem'}}>
                             <SyntaxHighlighter language={props.project.codeLang !== undefined ? props.project.codeLang : "javascript"} style={github}>
-                                    {props.project.code}
+                                {props.project.code}
                             </SyntaxHighlighter>
                         </Card.Body>
                         <hr/>

@@ -182,7 +182,7 @@ image.write_image("./test.bmp");
             }
         },
         {   
-            body: "Robot Duel is a Flutter App built with Flame. It is a mobile and web game in which you play against corrupt robots. Earn gold while fighting. Spend the gold to gain powerups. As the level increases, the robots get more powerful. It is also available asa a web app, but keep in mind that Flutter Web is still in beta, so the performance may not be optimal and the startup time is significant.",
+            body: "Robot Duel is a Flutter App built with Flame. It is a mobile and web game in which you play against corrupt robots. Earn gold while fighting. Spend the gold to gain powerups. As the level increases, the robots get more powerful. It is also available as a web app, but keep in mind that Flutter Web is still in beta, so the performance may not be optimal and the startup time is significant.",
             title: "Robot Duel",
             projectType: 'Mobile and Web Game',
             date: "05/2020",

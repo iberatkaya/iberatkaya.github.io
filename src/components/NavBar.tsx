@@ -14,6 +14,7 @@ export default function NavBar() {
             <Nav.Link style={linkStyle} href="#/">Home</Nav.Link>
             <Nav.Link style={linkStyle} href="#/projects">Projects</Nav.Link>
             <Nav.Link style={linkStyle} href="#/about">About</Nav.Link>
+            <Nav.Link style={linkStyle} href="https://raw.githubusercontent.com/iberatkaya/iberatkaya.github.io/dev/cv/cv.pdf" target="_blank" rel="noopener noreferrer">CV</Nav.Link>
             <Navbar.Toggle/>
             <Navbar.Collapse>
                 <Nav className="ml-auto" style={{alignItems: "center"}}>

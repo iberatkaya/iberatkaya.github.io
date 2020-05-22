@@ -25,7 +25,7 @@ export default function Home() {
                                 <br/>
                                 I am studying Computer Engineering at Istanbul Technical University.
                                 <br/>
-                                Checkout my <a href="#/projects">projects</a> or <a href="#/about">learn more</a> about me.
+                                Checkout <a href="#/projects">my projects</a> or <a href="#/about">learn more</a> about me.
                             </div>
                         </Zoom>
                     </Container>
