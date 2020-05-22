@@ -7,6 +7,7 @@ import QRImgs from '../imgs/qr/imgs';
 import MeetUpsImgs from '../imgs/meetups/imgs';
 import iexpenseImgs from '../imgs/iexpense/imgs';
 import FractalImgs from '../imgs/fractal/imgs';
+import LabelerImgs from '../imgs/labeler/imgs';
 import PoemifyImgs from '../imgs/poemify/imgs';
 import RobotImgs from '../imgs/robot/imgs';
 
@@ -100,7 +101,7 @@ ia.executeMultiple({
             }
         },
         {   
-            body: "MouseBot is an open-source NPM Package built with Rust and Node.js using native Neon bindings. It is a cross platform desktop automation package.",
+            body: "MouseBot is an open-source NPM Package built with Rust and Node.js using native Neon bindings. It is a cross-platform desktop automation package.",
             code: `
 import { Bot } from 'mousebot';
     
@@ -167,6 +168,17 @@ image.write_image("./test.bmp");
             links: {
                 weburl: 'https://crates.io/crates/fractal-gen',
                 github: 'https://github.com/iberatkaya/fractal-gen'
+            }
+        },
+        {   
+            body: "Labeler is an Electron App that helps users label images. Simply open a directory, select your output folder name and class names, and begin labelling. Labeler will automatically copy your labeled images to the desired output folder. It was designed to help labelling images by providing a GUI and automatically doing the copying operation. The project started when I thought of a way to help me simplify classifing a dataset.",
+            title: "Labeler",
+            projectType: 'Desktop App',
+            date: "03/2020",
+            image: LabelerImgs,
+            imagePadding: '0',
+            links: {
+                github: 'https://github.com/iberatkaya/labeler'
             }
         },
         {   
