@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import { FaInstagram, FaTwitter, FaLinkedinIn, FaGithub, FaAppStore, FaGooglePlay } from "react-icons/fa";
+import { FaInstagram, FaTwitter, FaLinkedinIn, FaGithub, FaAppStore, FaGooglePlay, FaIdCard } from "react-icons/fa";
 
 export default function NavBar() {
     let linkStyle: React.CSSProperties = {fontSize: 18};
@@ -17,7 +17,7 @@ export default function NavBar() {
             <Navbar.Toggle/>
             <Navbar.Collapse>
                 <Nav className="ml-auto" style={{alignItems: "center"}}>
-                    <Nav.Link style={{...linkStyle, fontWeight: 'bold'}} href="https://raw.githubusercontent.com/iberatkaya/iberatkaya.github.io/dev/cv/cv.pdf" target="_blank" rel="noopener noreferrer">CV</Nav.Link>
+                    <Nav.Link style={linkStyle} href="https://raw.githubusercontent.com/iberatkaya/iberatkaya.github.io/dev/cv/cv.pdf" target="_blank" rel="noopener noreferrer"><FaIdCard size={24}/></Nav.Link>
                     <Nav.Link style={iconLinkStyle} onClick={() => launchLink("https://www.linkedin.com/in/ibrahim-berat-kaya/")}><FaLinkedinIn size={24}/></Nav.Link>
                     <Nav.Link style={iconLinkStyle} onClick={() => launchLink("https://github.com/iberatkaya")}><FaGithub size={24}/></Nav.Link>
                     <Nav.Link style={iconLinkStyle} onClick={() => launchLink("https://apps.apple.com/us/developer/selim-ustel/id1498230191")}><FaAppStore size={24}/></Nav.Link>

@@ -9,6 +9,7 @@ import iexpenseImgs from '../imgs/iexpense/imgs';
 import FractalImgs from '../imgs/fractal/imgs';
 import LabelerImgs from '../imgs/labeler/imgs';
 import PoemifyImgs from '../imgs/poemify/imgs';
+import CompressorImgs from '../imgs/compressor/imgs';
 import RobotImgs from '../imgs/robot/imgs';
 
 
@@ -191,6 +192,18 @@ image.write_image("./test.bmp");
                 playstore: 'https://play.google.com/store/apps/details?id=com.kaya.poemify',
                 appstore: 'https://apps.apple.com/us/app/poemify-social-poetry/id1507168355',
                 github: 'https://github.com/iberatkaya/poemify'
+            }
+        },
+        {   
+            body: "Compressor is a mobile application developed with Flutter. It compresses images and videos.",
+            title: "Compressor",
+            projectType: 'Mobile App',
+            date: "04/2020",
+            image: CompressorImgs,
+            links: {
+                playstore: 'https://play.google.com/store/apps/details?id=com.kaya.compressor',
+                appstore: 'https://apps.apple.com/us/app/compressor-image-and-video/id1510246501',
+                github: 'https://github.com/iberatkaya/compressor'
             }
         },
         {   
