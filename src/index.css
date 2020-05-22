@@ -9,11 +9,18 @@ body {
     sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #cccccc !important;
+  background-color: #dddddd !important;
   color: #111111 !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+hr {
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
