@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row';
+import Card from 'react-bootstrap/Card';
 const Flip = require('react-reveal/Flip');
 
 export default function About() {
@@ -19,29 +20,33 @@ export default function About() {
             <Row style={rowStyle}>
                 <Container>
                     <Flip left>
-                        <div style={{fontSize: '1.25rem'}}>
-                            <p>
-                                {"Hello. My name is Ibrahim Berat Kaya. I am from Pennsylvania, USA. I am " + _calculateAge(new Date(1998, 10, 26)).toString() + " years old. I currently reside in Istanbul. I study computer engineering at Istanbul Technical University and I am in my senior year. Brief information about myself: "}
-                            </p>
-                            <ul>
-                                <li>I am interested in Full Stack Web Development, Cross-Platform Application Development, System Programming, and Machine learning.</li>
-                                <li>I have developed several <a href="#/projects">software projects</a> with Node.js, Express, React, React Native, Flutter, Electron, Firebase, and Rust.    </li>
-                                <li>I am enthusiastic about open-source software and I like to develop open-source packages.  </li>
-                                <li>
-                                    Here are some of the courses I have taken at ITU: 
+                        <Card>
+                            <Card.Body>
+                                <div style={{fontSize: '1.25rem'}}>
+                                    <p>
+                                        {"Hello. My name is Ibrahim Berat Kaya. I am from Pennsylvania, USA. I am " + _calculateAge(new Date(1998, 10, 26)).toString() + " years old. I currently reside in Istanbul. I study computer engineering at Istanbul Technical University and I am in my senior year. Brief information about myself: "}
+                                    </p>
                                     <ul>
-                                        <li>OOP</li> 
-                                        <li>Data Structures</li> 
-                                        <li>Linear Algebra</li> 
-                                        <li>Numerical Methods</li> 
-                                        <li>Operating Systems</li> 
-                                        <li>Analysis of Algorithms</li> 
-                                        <li>Database Systems</li>  
+                                        <li>I am interested in Full Stack Web Development, Cross-Platform Application Development, System Programming, and Machine learning.</li>
+                                        <li>I have developed several <a href="#/projects">software projects</a> with Node.js, Express, React, React Native, Flutter, Electron, Firebase, and Rust.    </li>
+                                        <li>I am enthusiastic about open-source software and I like to develop open-source packages.  </li>
+                                        <li>
+                                            Here are some of the courses I have taken at ITU: 
+                                            <ul>
+                                                <li>OOP</li> 
+                                                <li>Data Structures</li> 
+                                                <li>Linear Algebra</li> 
+                                                <li>Numerical Methods</li> 
+                                                <li>Operating Systems</li> 
+                                                <li>Analysis of Algorithms</li> 
+                                                <li>Database Systems</li>  
+                                            </ul>
+                                        </li>
                                     </ul>
-                                </li>
-                            </ul>
-                            <p>Feel free to checkout my <a href="https://raw.githubusercontent.com/iberatkaya/iberatkaya.github.io/dev/cv/cv.pdf" target="_blank" rel="noopener noreferrer">CV</a> or contact me at <a href="mailto:ibraberatkaya@gmail.com">ibraberatkaya@gmail.com</a>.</p>
-                        </div>
+                                    <p>Feel free to checkout my <a href="https://raw.githubusercontent.com/iberatkaya/iberatkaya.github.io/dev/cv/cv.pdf" target="_blank" rel="noopener noreferrer">CV</a> or contact me at <a href="mailto:ibraberatkaya@gmail.com">ibraberatkaya@gmail.com</a>.</p>
+                                </div>
+                            </Card.Body>
+                        </Card>
                     </Flip>
                 </Container>
             </Row>

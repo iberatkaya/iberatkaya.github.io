@@ -52,12 +52,12 @@ export default function ProjectCard(props: Props) {
     }
 
     return (
-        <Card style={{ maxWidth: isMobile ? '95vw' : '25vw', margin: 8, borderColor: '#ccc', borderWidth: 1}}>
-            <Card.Header>
+        <Card style={{ maxWidth: isMobile ? '95vw' : '25vw', margin: 8, borderColor: '#ccc', borderWidth: 1 }}>
+            <Card.Header style={{backgroundColor: 'rgba(0, 0, 0, 0.05)'}}>
                 <Card.Title style={{textAlign: 'center', fontSize: '1.5rem', paddingTop: '0.5rem'}}>{props.project.title}</Card.Title>
                 <Row style={{justifyContent: 'space-between', paddingLeft: '1rem', paddingRight: '1rem'}}>
-                    <Card.Subtitle style={{fontSize: 12}} className="mt-2 text-muted">{props.project.projectType}</Card.Subtitle>
-                    <Card.Subtitle style={{fontSize: 12}} className="mt-2 text-muted">{props.project.date}</Card.Subtitle>
+                    <Card.Subtitle style={{fontSize: 12, color: '#666'}} className="mt-2">{props.project.projectType}</Card.Subtitle>
+                    <Card.Subtitle style={{fontSize: 12, color: '#666'}} className="mt-2">{props.project.date}</Card.Subtitle>
                 </Row>
             </Card.Header>
             {
