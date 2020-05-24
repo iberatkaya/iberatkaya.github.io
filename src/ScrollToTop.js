@@ -7,7 +7,6 @@ function ScrollToTop({ history }) {
   useEffect(() => {
     const unlisten = history.listen(() => {
       window.scrollTo(0, 0);
-      console.log("scrolll")
     });
     return () => {
       unlisten();
