@@ -11,7 +11,8 @@ import LabelerImgs from '../imgs/labeler/imgs';
 import PoemifyImgs from '../imgs/poemify/imgs';
 import CompressorImgs from '../imgs/compressor/imgs';
 import RobotImgs from '../imgs/robot/imgs';
-
+import { isMobile } from "react-device-detect";
+const Zoom = require('react-reveal/Zoom');
 
 export default function Projects() {
     let myprojects: Project[] = [
@@ -225,11 +226,32 @@ image.write_image("./test.bmp");
     return (
         <Container fluid style={{display: "flex"}}>
             <Row style={{justifyContent: "center"}}>
-                {
-                    myprojects.map((i) => (
-                        <ProjectCard project={i} />
-                    ))
-                }
+                <Zoom fraction={isMobile ? 0.05 : 0.1} duration={500}>
+                    {
+                        myprojects.map((i, index, arr) => {
+                            if(index % 3 === 0){
+                                return (
+                                    <Row style={{justifyContent: "center"}}>
+                                        <ProjectCard id={i.title.substring(0, 5)} project={i} />
+                                        {
+                                            arr.length > index + 1 ?
+                                                <ProjectCard id={i.title.substring(0, 5)} project={arr[index + 1]} />
+                                            :
+                                                <div/>
+                                        }
+                                        {
+                                            arr.length > index + 2 ?
+                                                <ProjectCard id={i.title.substring(0, 5)} project={arr[index + 2]} />
+                                            :
+                                                <div/>
+                                        }
+                                    </Row>
+                                )
+                            }
+                            return <div></div>
+                        })
+                    }
+                </Zoom>
             </Row>
         </Container>
     )

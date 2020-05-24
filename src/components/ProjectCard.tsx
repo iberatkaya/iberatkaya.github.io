@@ -34,6 +34,7 @@ export interface Project {
 
 interface Props {
     project: Project;
+    id?: string;
 }
 
 export default function ProjectCard(props: Props) {
@@ -44,7 +45,6 @@ export default function ProjectCard(props: Props) {
     const checkIfLoading = (arr: boolean[]) => {
         for(let i=0; i<arr.length; i++){
             if(arr[i]){
-                console.log('true');
                 return true;
             }
         }
@@ -52,7 +52,7 @@ export default function ProjectCard(props: Props) {
     }
 
     return (
-        <Card style={{ maxWidth: isMobile ? '95vw' : '25vw', margin: 8, borderColor: '#ccc', borderWidth: 1 }}>
+        <Card id={props.id} style={{ maxWidth: isMobile ? '95vw' : '25vw', margin: 8, borderColor: '#ccc', borderWidth: 1 }}>
             <Card.Header style={{backgroundColor: 'rgba(0, 0, 0, 0.05)'}}>
                 <Card.Title style={{textAlign: 'center', fontSize: '1.5rem', paddingTop: '0.5rem'}}>{props.project.title}</Card.Title>
                 <Row style={{justifyContent: 'space-between', paddingLeft: '1rem', paddingRight: '1rem'}}>

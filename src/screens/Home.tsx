@@ -13,17 +13,17 @@ export default function Home() {
     return (
         <Container fluid style={{height: '90vh', display: 'flex'}}>
             <Row style={{margin: 'auto'}}>
-                <Col>
+                <Col style={{marginTop: "5vh", marginBottom: "5vh"}}>
                     <Pulse forever={true} duration={2500}>
-                        <Container style={{backgroundColor: '#343a40', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '5rem', height: '25vh', width: '25vh'}}>
+                        <Container style={{backgroundColor: '#343a40', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '5rem', height: '30vh', width: '30vh', borderRadius: 12}}>
                             <Image src={logo} fluid />
                         </Container>
                     </Pulse>
                     <Container>
-                        <Zoom left>
+                        <Zoom left duration={750}>
                             <Card>
                                 <Card.Body>
-                                    <div style={{fontSize: '1.25rem'}}>
+                                    <div style={{fontSize: '1.35rem'}}>
                                         Hello and welcome to my portfolio! My name is Ibrahim Berat Kaya.
                                         <br/>
                                         I am studying Computer Engineering at Istanbul Technical University.
