@@ -12,7 +12,7 @@ import PoemifyImgs from '../imgs/poemify/imgs';
 import CompressorImgs from '../imgs/compressor/imgs';
 import RobotImgs from '../imgs/robot/imgs';
 import { isMobile } from "react-device-detect";
-const Zoom = require('react-reveal/Zoom');
+const Fade = require('react-reveal/Fade');
 
 export default function Projects() {
     let myprojects: Project[] = [
@@ -226,7 +226,7 @@ image.write_image("./test.bmp");
     return (
         <Container fluid style={{display: "flex"}}>
             <Row style={{justifyContent: "center"}}>
-                <Zoom fraction={isMobile ? 0.05 : 0.1} duration={500}>
+                <Fade fraction={isMobile ? 0.05 : 0.1} duration={500}>
                     {
                         myprojects.map((i, index, arr) => {
                             if(index % 3 === 0){
@@ -251,7 +251,7 @@ image.write_image("./test.bmp");
                             return <div></div>
                         })
                     }
-                </Zoom>
+                </Fade>
             </Row>
         </Container>
     )
