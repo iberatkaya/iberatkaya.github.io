@@ -7,10 +7,12 @@ import Home from "./screens/Home";
 import NavBar from "./components/NavBar";
 import Projects from "./screens/Projects";
 import About from "./screens/About";
+import ScrollToTop from "./ScrollToTop";
 
 export default function App() {
   return (
     <Router hashType="slash">
+        <ScrollToTop />
         <NavBar/>
         <Route path="/about">
           <About/>
