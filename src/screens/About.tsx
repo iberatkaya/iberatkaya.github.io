@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
+import { isMobile } from "react-device-detect";
 import Image from 'react-bootstrap/Image';
 import me from "../imgs/me.png"
 const Fade = require('react-reveal/Fade');
@@ -22,9 +23,7 @@ export default function About() {
             <Card style={{marginBottom: '2vh'}}>
                 <Card.Body>
                     <div style={{fontSize: '1.1rem'}}>
-                        <p>
-                            {text}
-                        </p>
+                        {text}
                     </div>
                 </Card.Body>
             </Card>
@@ -72,9 +71,8 @@ export default function About() {
                                     return (
                                         <Row style={{justifyContent: 'space-evenly', alignItems: 'center'}}>
                                             <Col xs={8} md={2} style={{marginBottom: '2vh'}}>
-
                                                 <Fade left delay={0}>
-                                                <Image src={me} roundedCircle fluid />
+                                                    <Image src={me} roundedCircle fluid />
                                                 </Fade>
                                             </Col>
                                             <Col xs={12} md={8}>
@@ -84,7 +82,7 @@ export default function About() {
                                     )
                                 }
                                 else {
-                                    return (card(i, (index + 1) * 20));
+                                    return (card(i, (index) * 20 * (isMobile ? 0 : 1)));
                                 }
                             })}
                         </Container>
