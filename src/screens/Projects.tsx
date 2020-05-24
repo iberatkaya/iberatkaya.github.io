@@ -145,7 +145,7 @@ chain();
             }
         },
         {   
-            body: "Fractal Gen is an open-source Rust Crate that generates fractals as BMP images.",
+            body: "Fractal Gen is an open-source Rust Crate that generates fractals as BMP images with 0 dependencies. The BMP images are created natively within the library.",
             code: `
 // Create a Fractal from the pixels.
 let mut image = Fractal::new(pixels);
