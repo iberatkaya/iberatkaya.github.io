@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import { isMobile } from "react-device-detect";
 import Image from 'react-bootstrap/Image';
-import me from "../imgs/me.png"
+import me from "../imgs/me.jpg"
 const Fade = require('react-reveal/Fade');
 
 export default function About() {

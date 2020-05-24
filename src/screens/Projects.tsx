@@ -11,6 +11,7 @@ import LabelerImgs from '../imgs/labeler/imgs';
 import PoemifyImgs from '../imgs/poemify/imgs';
 import CompressorImgs from '../imgs/compressor/imgs';
 import RobotImgs from '../imgs/robot/imgs';
+import GaussImgs from '../imgs/gauss/imgs';
 import { isMobile } from "react-device-detect";
 const Zoom = require('react-reveal/Zoom');
 
@@ -219,6 +220,34 @@ image.write_image("./test.bmp");
                 appstore: 'https://apps.apple.com/us/app/robot-duel-fight/id1511433623',
                 github: 'https://github.com/iberatkaya/Robot-Duel',
                 weburl: 'https://iberatkaya.github.io/Robot-Duel/#/'
+            }
+        },
+        {   
+            body: "Gaussian Blur is a simple Rust Project that applies Gaussian Blur to images.",
+            title: "Gaussian Blur",
+            code: ` 
+extern crate image;
+use image::open;
+//Open my library named blur
+mod blur;
+//Get the gaussian_blur function from blur
+use blur::gaussian::gaussian_blur;
+
+fn main() {
+    //Open the image
+    let image = open("./images/pika.png").unwrap();
+
+    //Apply gaussian blur and save the image
+    gaussian_blur(image, 9, 5.0, "./images/blurred_pika.png");
+}
+`,
+            codeLang: "rust",
+            projectType: 'Rust Project',
+            date: "05/2020",
+            image: GaussImgs,
+            imagePadding: '0',
+            links: {
+                github: 'https://github.com/iberatkaya/gaussian-blur',
             }
         },
     ].reverse();
