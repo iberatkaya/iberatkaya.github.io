@@ -53,8 +53,13 @@ export default function About() {
         </p>,
         <p>Some of my hobbies:
             <ul>
-                <li>I have been playing the guitar for 5 years</li>
-                <li>I have been playing the keyboard for 2 years</li>
+                <li>
+                    <a href="#/music">Music</a>:
+                    <ul>
+                        <li>I have been playing the guitar for 5 years.</li>
+                        <li>I have been playing the keyboard for 2 years.</li>
+                    </ul>
+                </li>
             </ul> 
         </p>,
         <p>Feel free to checkout my <a href="cv/cv.pdf" target="_blank" rel="noopener noreferrer">CV</a> or contact me at <a href="mailto:ibraberatkaya@gmail.com">ibraberatkaya@gmail.com</a>.</p>

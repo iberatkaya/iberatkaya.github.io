@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import { FaInstagram, FaTwitter, FaLinkedinIn, FaGithub, FaAppStore, FaGooglePlay, FaIdCard } from "react-icons/fa";
+import { FaInstagram, FaTwitter, FaLinkedinIn, FaGithub, FaAppStore, FaGooglePlay, FaIdCard, FaMusic } from "react-icons/fa";
 
 export default function NavBar() {
     let linkStyle: React.CSSProperties = {fontSize: 18};
@@ -24,6 +24,7 @@ export default function NavBar() {
                     <Nav.Link style={iconLinkStyle} onClick={() => launchLink("https://play.google.com/store/apps/developer?id=IBK+Apps")}><FaGooglePlay size={24}/></Nav.Link>
                     <Nav.Link style={iconLinkStyle} onClick={() => launchLink("https://www.instagram.com/ibraberatkaya/")}><FaInstagram size={24}/></Nav.Link>
                     <Nav.Link style={iconLinkStyle} onClick={() => launchLink("https://twitter.com/ibolasberat")}><FaTwitter size={24}/></Nav.Link>
+                    <Nav.Link style={iconLinkStyle} href="#/music"><FaMusic size={24}/></Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
