@@ -32,7 +32,7 @@ export default function About() {
 
     const nodes: React.ReactNode[] = [
         <p>
-            {"Hello. My name is Ibrahim Berat Kaya. I am from State College, PA, USA. I am " + _calculateAge(new Date(1998, 10, 26)).toString() + " years old. I currently reside in Istanbul. I study computer engineering at Istanbul Technical University and I am in my senior year."}
+            {"Hello. My name is Ibrahim Berat Kaya. I study computer engineering at Istanbul Technical University and I am in my senior year. I am from State College, PA, USA. I am " + _calculateAge(new Date(1998, 10, 26)).toString() + " years old. I currently reside in Istanbul."}
         </p>,
         <p>I am interested in Full Stack Web Development, Cross-Platform Application Development, System Programming, and Machine Learning.</p>,
         <p>I have worked remotely and part time for 7 months at <a href="https://nacsoft.com.tr/" target="_blank" rel="noopener noreferrer">Nacsoft Yazılım</a>. I developed a receipt scanning mobile app available at the <a href="https://apps.apple.com/app/i-expense/id1488919379" target="_blank" rel="noopener noreferrer">App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.nacsoft.iexpense" target="_blank" rel="noopener noreferrer">Play Store</a> named <span style={{color: "#333", fontWeight: "bold"}}>i-expense.</span></p>,
