@@ -250,6 +250,49 @@ fn main() {
                 github: 'https://github.com/iberatkaya/gaussian-blur',
             }
         },
+        {   
+            body: "Playify is an open-source Flutter package for playing music and fetching music metadata from the music library. It is available on pub.dev",
+            code: `
+import 'package:playify/playify.dart';
+
+//Create an instance
+Playify myplayer = Playify();
+
+//Play from the latest queue.
+Future<void> play() async {
+    await myplayer.play();
+}
+
+//Fetch all songs from the music library.
+Future<List<Artist>> getAllSongs() async {
+    var artist = await myplayer.getAllSongs(sort: true);
+    return artists;
+}
+
+//Fetch song information about the currently playing song in the queue.
+Future<SongInfo> nowPlaying() async {
+    var artist = await myplayer.nowPlaying();
+    return artists;
+}
+
+//Set the queue using songIDs for iOS.
+Future<void> setQueue(songs: List<String>, index: int) async {
+    await myplayer.setQueue(songIDs: songs, startIndex: index);
+}
+
+//Skip to the next song in the queue.
+Future<void> next() async {
+    await myplayer.next();
+}
+`,
+            title: "Playify",
+            projectType: 'Flutter Package',
+            date: "06/2020",
+            links: {
+                weburl: 'https://pub.dev/packages/playify',
+                github: 'https://github.com/iberatkaya/playify'
+            }
+        },
     ].reverse();
 
     return (
