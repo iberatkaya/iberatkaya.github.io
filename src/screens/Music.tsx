@@ -59,13 +59,15 @@ export default function Music() {
                                             }
                                         </div>
                                     </div>
-                                    <ReactAudioPlayer
-                                        style={{marginTop: 12}}
-                                        src={song}
-                                        autoPlay
-                                        controls
-                                        preload="metadata"
-                                    />
+                                    <Row style={{justifyContent: "center"}}>
+                                        <ReactAudioPlayer
+                                            style={{marginTop: 12}}
+                                            src={song}
+                                            autoPlay
+                                            controls
+                                            preload="metadata"
+                                        />
+                                    </Row>
                                 </Card.Body>
                             </Card>
                         </Fade>
