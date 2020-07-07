@@ -13,9 +13,9 @@ export default function Home() {
     return (
         <Container fluid style={{height: '90vh', display: 'flex'}}>
             <Row style={{margin: 'auto'}}>
-                <Col style={{marginTop: "5vh", marginBottom: "5vh"}}>
+                <Col>
                     <Pulse forever={true} duration={2500}>
-                        <Container style={{backgroundColor: '#343a40', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '5rem', height: '30vh', width: '30vh', borderRadius: 12}}>
+                        <Container style={{backgroundColor: '#343a40', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '3.5rem', height: '30vh', width: '30vh', borderRadius: 12}}>
                             <Image src={logo} fluid />
                         </Container>
                     </Pulse>
