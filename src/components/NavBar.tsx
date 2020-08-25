@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import { FaInstagram, FaTwitter, FaLinkedinIn, FaGithub, FaAppStore, FaGooglePlay, FaIdCard, FaMusic, FaMediumM } from "react-icons/fa";
+import { FaTwitter, FaLinkedinIn, FaGithub, FaAppStore, FaGooglePlay, FaIdCard, FaMusic, FaMediumM, FaReddit } from "react-icons/fa";
 
 export default function NavBar() {
     let linkStyle: React.CSSProperties = {fontSize: 18};
@@ -22,7 +22,7 @@ export default function NavBar() {
                     <Nav.Link style={iconLinkStyle} onClick={() => launchLink("https://github.com/iberatkaya")}><FaGithub size={24}/></Nav.Link>
                     <Nav.Link style={iconLinkStyle} onClick={() => launchLink("https://apps.apple.com/us/developer/selim-ustel/id1498230191")}><FaAppStore size={24}/></Nav.Link>
                     <Nav.Link style={iconLinkStyle} onClick={() => launchLink("https://play.google.com/store/apps/developer?id=IBK+Apps")}><FaGooglePlay size={24}/></Nav.Link>
-                    <Nav.Link style={iconLinkStyle} onClick={() => launchLink("https://www.instagram.com/ibraberatkaya/")}><FaInstagram size={24}/></Nav.Link>
+                    <Nav.Link style={iconLinkStyle} onClick={() => launchLink("https://www.reddit.com/user/iberatkaya")}><FaReddit size={24}/></Nav.Link>
                     <Nav.Link style={iconLinkStyle} onClick={() => launchLink("https://twitter.com/iberatkaya")}><FaTwitter size={24}/></Nav.Link>
                     <Nav.Link style={iconLinkStyle} onClick={() => launchLink("https://medium.com/@iberatkaya")}><FaMediumM size={24}/></Nav.Link>
                     <Nav.Link style={iconLinkStyle} href="#/music"><FaMusic size={24}/></Nav.Link>
