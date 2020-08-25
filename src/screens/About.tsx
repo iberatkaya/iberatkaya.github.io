@@ -12,8 +12,8 @@ export default function About() {
     const rowStyle = {alignItems: 'center', justifyContent: 'center', paddingTop: '3vh', paddingBottom: '3vh'};
 
     
-    const _calculateAge = (birthday: Date) => {
-        const ageDifMs = Date.now() - birthday.getTime();
+    const _calculateAge = (date: Date) => {
+        const ageDifMs = Date.now() - date.getTime();
         const ageDate = new Date(ageDifMs); 
         return Math.abs(ageDate.getUTCFullYear() - 1970);
     }
@@ -36,8 +36,9 @@ export default function About() {
         </p>,
         <p>I am interested in Full Stack Web Development, Cross-Platform Application Development, System Programming, and Machine Learning.</p>,
         <p>I have worked remotely and part time for 7 months at <a href="https://nacsoft.com.tr/" target="_blank" rel="noopener noreferrer">Nacsoft Yazılım</a>. I developed a receipt scanning mobile app available at the <a href="https://apps.apple.com/app/i-expense/id1488919379" target="_blank" rel="noopener noreferrer">App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.nacsoft.iexpense" target="_blank" rel="noopener noreferrer">Play Store</a> named <span style={{color: "#333", fontWeight: "bold"}}>i-expense.</span></p>,
+        <p>I currently work at <a href="http://gmcteknoloji.com/">GMC Teknoloji</a> as a Software Developer. I develop Mobile and Web Applications with React, Flutter, Firebase, and Node.js.</p>,
         <p>I have developed several <a href="#/projects">software projects</a> with Node.js, Express, React, React Native, Flutter, Electron, Firebase, and Rust.</p>,
-        <p>I am enthusiastic about open-source software and I like to develop open-source packages. I have published 3 open-source software packages.</p>,
+        <p>I am enthusiastic about open-source software and I like to develop open-source packages. I have published 4 open-source software packages.</p>,
         <p>
             Here are some of the courses I have taken at ITU: 
             <ul>
@@ -47,6 +48,7 @@ export default function About() {
                 <li>Numerical Methods</li> 
                 <li>Operating Systems</li> 
                 <li>Analysis of Algorithms</li> 
+                <li>Learning From Data</li>  
                 <li>Database Systems</li>  
                 <li>Digital Circuits</li>  
             </ul>
@@ -56,8 +58,8 @@ export default function About() {
                 <li>
                     <a href="#/music">Music</a>:
                     <ul>
-                        <li>I have been playing the guitar for 5 years.</li>
-                        <li>I have been playing the keyboard for 2 years.</li>
+                        <li>I have been playing the guitar for {_calculateAge(new Date(2015, 1)).toString()} years.</li>
+                        <li>I have been playing the keyboard for {_calculateAge(new Date(2018, 1)).toString()} years.</li>
                     </ul>
                 </li>
             </ul> 

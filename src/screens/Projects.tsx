@@ -12,6 +12,7 @@ import PoemifyImgs from '../imgs/poemify/imgs';
 import CompressorImgs from '../imgs/compressor/imgs';
 import RobotImgs from '../imgs/robot/imgs';
 import GaussImgs from '../imgs/gauss/imgs';
+import PlayifyImgs from '../imgs/playify/imgs';
 import { isMobile } from "react-device-detect";
 const Zoom = require('react-reveal/Zoom');
 
@@ -285,12 +286,23 @@ Future<void> next() async {
     await myplayer.next();
 }
 `,
-            title: "Playify",
-            projectType: 'Flutter Package',
+            title: "Playify (Plugin)",
+            projectType: 'Flutter Plugin',
             date: "06/2020",
             links: {
                 weburl: 'https://pub.dev/packages/playify',
                 github: 'https://github.com/iberatkaya/playify'
+            }
+        },
+        {   
+            body: "The Playify App is an iOS Music Player app developed with Flutter and The Playify Plugin. Users can play/pause/seek songs, browse their media libraries.",
+            title: "Playify (App)",
+            projectType: 'Music Player Mobile App',
+            date: "08/2020",
+            image: PlayifyImgs,
+            imagePadding: '0',
+            links: {
+                github: 'https://github.com/iberatkaya/playify_app',
             }
         },
     ].reverse();
