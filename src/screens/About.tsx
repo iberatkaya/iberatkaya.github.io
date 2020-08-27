@@ -53,7 +53,7 @@ export default function About() {
                 <li>Digital Circuits</li>  
             </ul>
         </p>,
-        <p>Some of my hobbies:
+        <p>My hobbies:
             <ul>
                 <li>
                     <a href="#/music">Music</a>:
@@ -64,7 +64,7 @@ export default function About() {
                 </li>
             </ul> 
         </p>,
-        <p>Feel free to checkout my <a href="cv/cv.pdf" target="_blank" rel="noopener noreferrer">CV</a> or contact me at <a href="mailto:ibraberatkaya@gmail.com">ibraberatkaya@gmail.com</a>.</p>
+        <p>Feel free to checkout my <a href="cv/cv.pdf" target="_blank" rel="noopener noreferrer">CV</a> or contact me at <a href="mailto:ibraberatkaya@gmail.com">ibraberatkaya@gmail.com</a>. <div style={{color: "#777"}}>Checkout the <a href="https://github.com/iberatkaya/iberatkaya.github.io/tree/dev" target="_blank" rel="noopener noreferrer">code</a> of this portfolio.</div></p>
     ];
 
     return (

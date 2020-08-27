@@ -277,7 +277,7 @@ Future<SongInfo> nowPlaying() async {
 }
 
 //Set the queue using songIDs for iOS.
-Future<void> setQueue(songs: List<String>, index: int) async {
+Future<void> setQueue(List<String> songs, int index) async {
     await myplayer.setQueue(songIDs: songs, startIndex: index);
 }
 
