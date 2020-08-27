@@ -302,7 +302,8 @@ Future<void> next() async {
             image: PlayifyImgs,
             imagePadding: '0',
             links: {
-                github: 'https://github.com/iberatkaya/playify_app',
+                appstore: 'https://apps.apple.com/us/app/id1529006344',
+                github: 'https://github.com/iberatkaya/playify_app'
             }
         },
     ].reverse();
