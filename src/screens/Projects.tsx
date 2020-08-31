@@ -187,14 +187,14 @@ image.write_image("./test.bmp");
         },
         {   
             body: "Poemify is a social poem sharing mobile application developed with React Native and Firebase. Users may create accounts, like, share, and save poems.",
-            title: "Poemify (v1)",
+            title: "Poemify",
             projectType: 'Mobile App',
             date: "03/2020 - 04/2020",
             image: PoemifyImgs,
             links: {
                 playstore: 'https://play.google.com/store/apps/details?id=com.kaya.poemify',
                 appstore: 'https://apps.apple.com/us/app/poemify-social-poetry/id1507168355',
-                github: 'https://github.com/iberatkaya/poemify_rn'
+                github: 'https://github.com/iberatkaya/poemify'
             }
         },
         {   
