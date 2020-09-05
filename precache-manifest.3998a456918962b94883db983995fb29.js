@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "647c98b82caf8fc88762b0045fc9fdc8",
+    "revision": "c689c9b13556d0283597fc1f5673927e",
     "url": "/index.html"
   },
   {
-    "revision": "8fb286394e02943413a0",
+    "revision": "e10ecb8fab4e01410830",
     "url": "/static/css/2.3a7595ce.chunk.css"
   },
   {
-    "revision": "352c1588cfb032914060",
+    "revision": "1aa6b54db158e57908e7",
     "url": "/static/css/main.bc3fd1d5.chunk.css"
   },
   {
-    "revision": "8fb286394e02943413a0",
-    "url": "/static/js/2.a3bda8d1.chunk.js"
+    "revision": "e10ecb8fab4e01410830",
+    "url": "/static/js/2.24c422ef.chunk.js"
   },
   {
     "revision": "fdd30b2ab44ae896589b798d411d5c2c",
-    "url": "/static/js/2.a3bda8d1.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.24c422ef.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "352c1588cfb032914060",
-    "url": "/static/js/main.9beb5a3b.chunk.js"
+    "revision": "1aa6b54db158e57908e7",
+    "url": "/static/js/main.5604860c.chunk.js"
   },
   {
     "revision": "eee6eafa9597e0e3e972",
@@ -100,6 +100,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/1.9f45cf49.png"
   },
   {
+    "revision": "d0f4b26c229587f93faa3c3e3b1c59d1",
+    "url": "/static/media/1.d0f4b26c.png"
+  },
+  {
     "revision": "e1386723b4ee3b248c5ad7b9ae4e201e",
     "url": "/static/media/1.e1386723.gif"
   },
@@ -174,6 +178,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "db273179fa93ac395804bb9fdda5bed3",
     "url": "/static/media/2.db273179.png"
+  },
+  {
+    "revision": "e48640e403f81dff692e34292e3b067b",
+    "url": "/static/media/2.e48640e4.gif"
   },
   {
     "revision": "fbf1ad7f79eb33fe5aaf78abaa13fe7b",
