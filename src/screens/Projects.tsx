@@ -1,63 +1,73 @@
-import React from 'react'
-import Container from 'react-bootstrap/Container';
-import ProjectCard, { Project } from '../components/ProjectCard';
-import Row from 'react-bootstrap/Row';
-import MusicScalesImgs from '../imgs/music_scales/imgs';
-import QRImgs from '../imgs/qr/imgs';
-import MeetUpsImgs from '../imgs/meetups/imgs';
-import iexpenseImgs from '../imgs/iexpense/imgs';
-import FractalImgs from '../imgs/fractal/imgs';
-import LabelerImgs from '../imgs/labeler/imgs';
-import PoemifyImgs from '../imgs/poemify/imgs';
-import CompressorImgs from '../imgs/compressor/imgs';
-import RobotImgs from '../imgs/robot/imgs';
-import GaussImgs from '../imgs/gauss/imgs';
-import PlayifyImgs from '../imgs/playify/imgs';
+import React from "react";
+import Container from "react-bootstrap/Container";
+import ProjectCard, { Project } from "../components/ProjectCard";
+import Row from "react-bootstrap/Row";
+import MusicScalesImgs from "../imgs/music_scales/imgs";
+import QRImgs from "../imgs/qr/imgs";
+import MeetUpsImgs from "../imgs/meetups/imgs";
+import iexpenseImgs from "../imgs/iexpense/imgs";
+import FractalImgs from "../imgs/fractal/imgs";
+import LabelerImgs from "../imgs/labeler/imgs";
+import PoemifyImgs from "../imgs/poemify/imgs";
+import CompressorImgs from "../imgs/compressor/imgs";
+import RobotImgs from "../imgs/robot/imgs";
+import GaussImgs from "../imgs/gauss/imgs";
+import PlayifyImgs from "../imgs/playify/imgs";
+import ColorBlocImgs from "../imgs/colorbloc/imgs";
 import { isMobile } from "react-device-detect";
-const Zoom = require('react-reveal/Zoom');
+const Zoom = require("react-reveal/Zoom");
 
 export default function Projects() {
-    let myprojects: Project[] = [
-        {   
-            body: "Music Scales is a music theory mobile application that shows scales and chords for the piano and guitar. Developed with Flutter. 20k+ downloads at the Play Store.",
-            title: "Music Scales",
-            projectType: 'Mobile App',
-            date: "12/2018 - 01/2019",
-            image: MusicScalesImgs,
-            links: {
-                playstore: 'https://play.google.com/store/apps/details?id=com.kaya.musicapp',
-                appstore: 'https://apps.apple.com/us/app/music-scales/id1498463498',
-                github: 'https://github.com/iberatkaya/Music_Scales'
-            }
-        },
-        {   
-            body: "A QR scanner and generator mobile application developed with React Native. +10k downloads at the Play Store.",
-            title: "QR Reader & Generator",
-            projectType: 'Mobile App',
-            date: "06/2019",
-            image: QRImgs,
-            links: {
-                playstore: 'https://play.google.com/store/apps/details?id=com.kaya.qr_reader_and_generator',
-                appstore: 'https://apps.apple.com/us/app/qr-reader-generator/id1498310082',
-                github: 'https://github.com/iberatkaya/QR-Reader-Generator'
-            }
-        },
-        {   
-            body: "MeetUps With Friends is a group meetup organizer application developed with React, Express, and React Native.",
-            title: "MeetUps With Friends",
-            projectType: 'Mobile and Web App',
-            date: "11/2019",
-            image: MeetUpsImgs,
-            links: {
-                playstore: 'https://play.google.com/store/apps/details?id=com.kaya.meetupapp',
-                appstore: 'https://apps.apple.com/us/app/meetups-with-friends/id1498308902',
-                weburl: 'https://meetupswithfriends.com/',
-                github: 'https://github.com/iberatkaya/meetups'
-            }
-        },
-        {   
-            body: "Image Augmentation is an open-source NPM Package designed to augment images for training models in machine learning.",
-            code: `
+  let myprojects: Project[] = [
+    {
+      body:
+        "Music Scales is a music theory mobile application that shows scales and chords for the piano and guitar. Developed with Flutter. 20k+ downloads at the Play Store.",
+      title: "Music Scales",
+      projectType: "Mobile App",
+      date: "12/2018 - 01/2019",
+      image: MusicScalesImgs,
+      links: {
+        playstore:
+          "https://play.google.com/store/apps/details?id=com.kaya.musicapp",
+        appstore: "https://apps.apple.com/us/app/music-scales/id1498463498",
+        github: "https://github.com/iberatkaya/Music_Scales",
+      },
+    },
+    {
+      body:
+        "A QR scanner and generator mobile application developed with React Native. +10k downloads at the Play Store.",
+      title: "QR Reader & Generator",
+      projectType: "Mobile App",
+      date: "06/2019",
+      image: QRImgs,
+      links: {
+        playstore:
+          "https://play.google.com/store/apps/details?id=com.kaya.qr_reader_and_generator",
+        appstore:
+          "https://apps.apple.com/us/app/qr-reader-generator/id1498310082",
+        github: "https://github.com/iberatkaya/QR-Reader-Generator",
+      },
+    },
+    {
+      body:
+        "MeetUps With Friends is a group meetup organizer application developed with React, Express, and React Native.",
+      title: "MeetUps With Friends",
+      projectType: "Mobile and Web App",
+      date: "11/2019",
+      image: MeetUpsImgs,
+      links: {
+        playstore:
+          "https://play.google.com/store/apps/details?id=com.kaya.meetupapp",
+        appstore:
+          "https://apps.apple.com/us/app/meetups-with-friends/id1498308902",
+        weburl: "https://meetupswithfriends.com/",
+        github: "https://github.com/iberatkaya/meetups",
+      },
+    },
+    {
+      body:
+        "Image Augmentation is an open-source NPM Package designed to augment images for training models in machine learning.",
+      code: `
 import { ImageAugmentation } from 'image-augmentation';
 
 //Create an instance of the class.
@@ -85,28 +95,31 @@ ia.executeMultiple({
    outputNumber: 10
 });
 `,
-            title: "Image Augmentation",
-            projectType: 'NPM Package',
-            date: "01/2020",
-            links: {
-                npmurl: 'https://www.npmjs.com/package/image-augmentation/',
-                github: 'https://github.com/iberatkaya/image-augmentation'
-            }
-        },
-        {   
-            body: "A Turkish receipt scanning mobile application developed with React Native and Google Cloud Vision. Developed for Nacsoft Yazılım while I was working there part time as a software developer.",
-            title: "i-expense",
-            projectType: 'Mobile App',
-            date: "06/2019 - 01/2020",
-            image: iexpenseImgs,
-            links: {
-                playstore: 'https://play.google.com/store/apps/details?id=com.nacsoft.iexpense',
-                appstore: 'https://apps.apple.com/app/i-expense/id1488919379'
-            }
-        },
-        {   
-            body: "MouseBot is an open-source NPM Package built with Rust and Node.js using native Neon bindings. It is a cross-platform desktop automation package.",
-            code: `
+      title: "Image Augmentation",
+      projectType: "NPM Package",
+      date: "01/2020",
+      links: {
+        npmurl: "https://www.npmjs.com/package/image-augmentation/",
+        github: "https://github.com/iberatkaya/image-augmentation",
+      },
+    },
+    {
+      body:
+        "A Turkish receipt scanning mobile application developed with React Native and Google Cloud Vision. Developed for Nacsoft Yazılım while I was working there part time as a software developer.",
+      title: "i-expense",
+      projectType: "Mobile App",
+      date: "06/2019 - 01/2020",
+      image: iexpenseImgs,
+      links: {
+        playstore:
+          "https://play.google.com/store/apps/details?id=com.nacsoft.iexpense",
+        appstore: "https://apps.apple.com/app/i-expense/id1488919379",
+      },
+    },
+    {
+      body:
+        "MouseBot is an open-source NPM Package built with Rust and Node.js using native Neon bindings. It is a cross-platform desktop automation package.",
+      code: `
 import { Bot } from 'mousebot';
     
 /**
@@ -137,17 +150,18 @@ let chain = async () => {
 }
 chain();
 `,
-            title: "MouseBot",
-            projectType: 'NPM Package',
-            date: "02/2020",
-            links: {
-                npmurl: 'https://www.npmjs.com/package/mousebot',
-                github: 'https://github.com/iberatkaya/mousebot'
-            }
-        },
-        {   
-            body: "Fractal Gen is an open-source Rust Crate that generates fractals as BMP images with 0 dependencies. The BMP images are created natively within the library.",
-            code: `
+      title: "MouseBot",
+      projectType: "NPM Package",
+      date: "02/2020",
+      links: {
+        npmurl: "https://www.npmjs.com/package/mousebot",
+        github: "https://github.com/iberatkaya/mousebot",
+      },
+    },
+    {
+      body:
+        "Fractal Gen is an open-source Rust Crate that generates fractals as BMP images with 0 dependencies. The BMP images are created natively within the library.",
+      code: `
 // Create a Fractal from the pixels.
 let mut image = Fractal::new(pixels);
 
@@ -163,70 +177,80 @@ image.koch_curve(675, 75, 925, 325, 5, Pixel::new(0, 250, 0));
 // Write the BMP image.
 image.write_image("./test.bmp");
 `,
-            title: "Fractal Gen",
-            projectType: 'Cargo Crate',
-            date: "03/2020",
-            image: FractalImgs,
-            imagePadding: '2.5rem',
-            codeLang: "rust",
-            links: {
-                weburl: 'https://crates.io/crates/fractal-gen',
-                github: 'https://github.com/iberatkaya/fractal-gen'
-            }
-        },
-        {   
-            body: "Labeler is an Electron App that helps users label images. Simply open a directory, select your output folder name and class names, and begin labelling. Labeler will automatically copy your labeled images to the desired output folder. It was designed to help labelling images by providing a GUI and automatically doing the copying operation. The project started when I thought of a way to help me simplify classifing a dataset.",
-            title: "Labeler",
-            projectType: 'Desktop App',
-            date: "03/2020",
-            image: LabelerImgs,
-            imagePadding: '0',
-            links: {
-                github: 'https://github.com/iberatkaya/labeler'
-            }
-        },
-        {   
-            body: "Poemify is a social poem sharing mobile application developed with React Native and Firebase. Users may create accounts, like, share, and save poems.",
-            title: "Poemify",
-            projectType: 'Mobile App',
-            date: "03/2020 - 04/2020",
-            image: PoemifyImgs,
-            links: {
-                playstore: 'https://play.google.com/store/apps/details?id=com.kaya.poemify',
-                appstore: 'https://apps.apple.com/us/app/poemify-social-poetry/id1507168355',
-                github: 'https://github.com/iberatkaya/poemify'
-            }
-        },
-        {   
-            body: "Compressor is a mobile application developed with Flutter. It compresses images and videos.",
-            title: "Compressor",
-            projectType: 'Mobile App',
-            date: "04/2020",
-            image: CompressorImgs,
-            links: {
-                playstore: 'https://play.google.com/store/apps/details?id=com.kaya.compressor',
-                appstore: 'https://apps.apple.com/us/app/compressor-image-and-video/id1510246501',
-                github: 'https://github.com/iberatkaya/compressor'
-            }
-        },
-        {   
-            body: "Robot Duel is a Flutter App built with Flame. It is a mobile and web game in which you play against corrupt robots. Earn gold while fighting. Spend the gold to gain powerups. As the level increases, the robots get more powerful. It is also available as a web app, but keep in mind that Flutter Web is still in beta, so the performance may not be optimal and the startup time is significant.",
-            title: "Robot Duel",
-            projectType: 'Mobile and Web Game',
-            date: "05/2020",
-            image: RobotImgs,
-            imagePadding: '0',
-            links: {
-                playstore: 'https://play.google.com/store/apps/details?id=com.kaya.robotduel',
-                appstore: 'https://apps.apple.com/us/app/robot-duel-fight/id1511433623',
-                github: 'https://github.com/iberatkaya/Robot-Duel',
-                weburl: 'https://iberatkaya.github.io/Robot-Duel/#/'
-            }
-        },
-        {   
-            body: "Gaussian Blur is a simple Rust Project that applies Gaussian Blur to images.",
-            title: "Gaussian Blur",
-            code: ` 
+      title: "Fractal Gen",
+      projectType: "Cargo Crate",
+      date: "03/2020",
+      image: FractalImgs,
+      imagePadding: "2.5rem",
+      codeLang: "rust",
+      links: {
+        weburl: "https://crates.io/crates/fractal-gen",
+        github: "https://github.com/iberatkaya/fractal-gen",
+      },
+    },
+    {
+      body:
+        "Labeler is an Electron App that helps users label images. Simply open a directory, select your output folder name and class names, and begin labelling. Labeler will automatically copy your labeled images to the desired output folder. It was designed to help labelling images by providing a GUI and automatically doing the copying operation. The project started when I thought of a way to help me simplify classifing a dataset.",
+      title: "Labeler",
+      projectType: "Desktop App",
+      date: "03/2020",
+      image: LabelerImgs,
+      imagePadding: "0",
+      links: {
+        github: "https://github.com/iberatkaya/labeler",
+      },
+    },
+    {
+      body:
+        "Poemify is a social poem sharing mobile application developed with React Native and Firebase. Users may create accounts, like, share, and save poems.",
+      title: "Poemify",
+      projectType: "Mobile App",
+      date: "03/2020 - 04/2020",
+      image: PoemifyImgs,
+      links: {
+        playstore:
+          "https://play.google.com/store/apps/details?id=com.kaya.poemify",
+        appstore:
+          "https://apps.apple.com/us/app/poemify-social-poetry/id1507168355",
+        github: "https://github.com/iberatkaya/poemify",
+      },
+    },
+    {
+      body:
+        "Compressor is a mobile application developed with Flutter. It compresses images and videos.",
+      title: "Compressor",
+      projectType: "Mobile App",
+      date: "04/2020",
+      image: CompressorImgs,
+      links: {
+        playstore:
+          "https://play.google.com/store/apps/details?id=com.kaya.compressor",
+        appstore:
+          "https://apps.apple.com/us/app/compressor-image-and-video/id1510246501",
+        github: "https://github.com/iberatkaya/compressor",
+      },
+    },
+    {
+      body:
+        "Robot Duel is a Flutter App built with Flame. It is a mobile and web game in which you play against corrupt robots. Earn gold while fighting. Spend the gold to gain powerups. As the level increases, the robots get more powerful. It is also available as a web app, but keep in mind that Flutter Web is still in beta, so the performance may not be optimal and the startup time is significant.",
+      title: "Robot Duel",
+      projectType: "Mobile and Web Game",
+      date: "05/2020",
+      image: RobotImgs,
+      imagePadding: "0",
+      links: {
+        playstore:
+          "https://play.google.com/store/apps/details?id=com.kaya.robotduel",
+        appstore: "https://apps.apple.com/us/app/robot-duel-fight/id1511433623",
+        github: "https://github.com/iberatkaya/Robot-Duel",
+        weburl: "https://iberatkaya.github.io/Robot-Duel/#/",
+      },
+    },
+    {
+      body:
+        "Gaussian Blur is a simple Rust Project that applies Gaussian Blur to images.",
+      title: "Gaussian Blur",
+      code: ` 
 extern crate image;
 use image::open;
 //Open my library named blur
@@ -242,18 +266,19 @@ fn main() {
     gaussian_blur(image, 9, 5.0, "./images/blurred_pika.png");
 }
 `,
-            codeLang: "rust",
-            projectType: 'Rust Project',
-            date: "05/2020",
-            image: GaussImgs,
-            imagePadding: '0',
-            links: {
-                github: 'https://github.com/iberatkaya/gaussian-blur',
-            }
-        },
-        {   
-            body: "Playify is an open-source Flutter package for playing music and fetching music metadata from the music library. It is available on pub.dev",
-            code: `
+      codeLang: "rust",
+      projectType: "Rust Project",
+      date: "05/2020",
+      image: GaussImgs,
+      imagePadding: "0",
+      links: {
+        github: "https://github.com/iberatkaya/gaussian-blur",
+      },
+    },
+    {
+      body:
+        "Playify is an open-source Flutter package for playing music and fetching music metadata from the music library. It is available on pub.dev",
+      code: `
 import 'package:playify/playify.dart';
 
 //Create an instance
@@ -286,58 +311,80 @@ Future<void> next() async {
     await myplayer.next();
 }
 `,
-            title: "Playify (Plugin)",
-            projectType: 'Flutter Plugin',
-            date: "06/2020",
-            links: {
-                weburl: 'https://pub.dev/packages/playify',
-                github: 'https://github.com/iberatkaya/playify'
-            }
-        },
-        {   
-            body: "The Playify App is an iOS Music Player app developed with Flutter and The Playify Plugin. Users can play/pause/seek songs, browse their media libraries.",
-            title: "Playify (App)",
-            projectType: 'Music Player Mobile App',
-            date: "08/2020",
-            image: PlayifyImgs,
-            imagePadding: '0',
-            links: {
-                appstore: 'https://apps.apple.com/us/app/id1529006344',
-                github: 'https://github.com/iberatkaya/playify_app'
-            }
-        },
-    ].reverse();
+      title: "Playify (Plugin)",
+      projectType: "Flutter Plugin",
+      date: "06/2020",
+      links: {
+        weburl: "https://pub.dev/packages/playify",
+        github: "https://github.com/iberatkaya/playify",
+      },
+    },
+    {
+      body:
+        "The Playify App is an iOS Music Player app developed with Flutter and The Playify Plugin. Users can play/pause/seek songs, browse their media libraries.",
+      title: "Playify (App)",
+      projectType: "Music Player Mobile App",
+      date: "08/2020",
+      image: PlayifyImgs,
+      imagePadding: "0",
+      links: {
+        appstore: "https://apps.apple.com/us/app/id1529006344",
+        github: "https://github.com/iberatkaya/playify_app",
+      },
+    },
+    {
+      body:
+        "ColorBloc is a demo app built with Flutter using Bloc and CustomPaint. It is available as a webiste, but can also be ran as a mobile app.",
+      title: "ColorBloc",
+      projectType: "Example Mobile App",
+      date: "09/2020",
+      image: ColorBlocImgs,
+      imagePadding: "0",
+      links: {
+        github: "https://github.com/iberatkaya/colorBloc",
+        weburl: "https://iberatkaya.github.io/colorBloc/index.html",
+      },
+    },
+  ].reverse();
 
-    return (
-        <Container fluid style={{display: "flex"}}>
-            <Row style={{justifyContent: "center"}}>
-                <Zoom fraction={isMobile ? 0.05 : 0.1} duration={750}>
-                    {
-                        myprojects.map((i, index, arr) => {
-                            if(index % 3 === 0){
-                                return (
-                                    <Row style={{justifyContent: "center", marginRight: 0, marginLeft: 0}}>
-                                        <ProjectCard id={i.title.substring(0, 5)} project={i} />
-                                        {
-                                            arr.length > index + 1 ?
-                                                <ProjectCard id={i.title.substring(0, 5)} project={arr[index + 1]} />
-                                            :
-                                                <div/>
-                                        }
-                                        {
-                                            arr.length > index + 2 ?
-                                                <ProjectCard id={i.title.substring(0, 5)} project={arr[index + 2]} />
-                                            :
-                                                <div/>
-                                        }
-                                    </Row>
-                                )
-                            }
-                            return <div></div>
-                        })
-                    }
-                </Zoom>
-            </Row>
-        </Container>
-    )
+  return (
+    <Container fluid style={{ display: "flex" }}>
+      <Row style={{ justifyContent: "center" }}>
+        <Zoom fraction={isMobile ? 0.05 : 0.1} duration={750}>
+          {myprojects.map((i, index, arr) => {
+            if (index % 3 === 0) {
+              return (
+                <Row
+                  style={{
+                    justifyContent: "center",
+                    marginRight: 0,
+                    marginLeft: 0,
+                  }}
+                >
+                  <ProjectCard id={i.title.substring(0, 5)} project={i} />
+                  {arr.length > index + 1 ? (
+                    <ProjectCard
+                      id={i.title.substring(0, 5)}
+                      project={arr[index + 1]}
+                    />
+                  ) : (
+                    <div />
+                  )}
+                  {arr.length > index + 2 ? (
+                    <ProjectCard
+                      id={i.title.substring(0, 5)}
+                      project={arr[index + 2]}
+                    />
+                  ) : (
+                    <div />
+                  )}
+                </Row>
+              );
+            }
+            return <div></div>;
+          })}
+        </Zoom>
+      </Row>
+    </Container>
+  );
 }
