@@ -334,9 +334,9 @@ Future<void> next() async {
     },
     {
       body:
-        "ColorBloc is a demo app built with Flutter using Bloc and CustomPaint. It is available as a webiste, but can also be ran as a mobile app.",
+        "ColorBloc is a demo app built with Flutter using Bloc and CustomPaint. It is available as a website, but can also be ran as a mobile app.",
       title: "ColorBloc",
-      projectType: "Example Mobile App",
+      projectType: "Flutter Web App",
       date: "09/2020",
       image: ColorBlocImgs,
       imagePadding: "0",
