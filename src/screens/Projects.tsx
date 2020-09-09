@@ -50,17 +50,12 @@ export default function Projects() {
     },
     {
       body:
-        "MeetUps With Friends is a group meetup organizer application developed with React, Express, and React Native.",
+        "MeetUps With Friends is a group meetup organizer application developed with React, Express, and React Native. It is currently discontinued, but the source code is still available.",
       title: "MeetUps With Friends",
       projectType: "Mobile and Web App",
       date: "11/2019",
       image: MeetUpsImgs,
       links: {
-        playstore:
-          "https://play.google.com/store/apps/details?id=com.kaya.meetupapp",
-        appstore:
-          "https://apps.apple.com/us/app/meetups-with-friends/id1498308902",
-        weburl: "https://meetupswithfriends.com/",
         github: "https://github.com/iberatkaya/meetups",
       },
     },
