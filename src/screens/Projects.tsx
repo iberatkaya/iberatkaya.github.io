@@ -272,7 +272,7 @@ fn main() {
     },
     {
       body:
-        "Playify is an open-source Flutter package for playing music and fetching music metadata from the music library. It is available on pub.dev",
+        "Playify is an open-source Flutter package for playing music and fetching music metadata from the music library. It was built using iOS’s Music Player Library and Flutter’s Method Channel. It is available on pub.dev.",
       code: `
 import 'package:playify/playify.dart';
 
