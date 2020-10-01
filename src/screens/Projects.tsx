@@ -312,6 +312,8 @@ Future<void> next() async {
       links: {
         weburl: "https://pub.dev/packages/playify",
         github: "https://github.com/iberatkaya/playify",
+        medium:
+          "https://medium.com/@iberatkaya/developing-a-flutter-plugin-playify-39192e2fde19",
       },
     },
     {

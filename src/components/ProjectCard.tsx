@@ -9,6 +9,7 @@ import {
   FaGooglePlay,
   FaGithub,
   FaNpm,
+  FaMediumM,
 } from "react-icons/fa";
 import Row from "react-bootstrap/Row";
 import Spinner from "react-bootstrap/Spinner";
@@ -23,6 +24,7 @@ interface Links {
   github?: string;
   npmurl?: string;
   weburl?: string;
+  medium?: string;
 }
 
 export interface Project {
@@ -246,6 +248,22 @@ export default function ProjectCard(props: Props) {
                   rel="noopener noreferrer"
                 >
                   NPM
+                </a>
+              </Row>
+            ) : (
+              <div />
+            )}
+            {props.project.links.medium !== undefined ? (
+              <Row style={linkRow}>
+                <div style={linkIconsContainer}>
+                  <FaMediumM />
+                </div>
+                <a
+                  href={props.project.links.medium}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Medium
                 </a>
               </Row>
             ) : (
