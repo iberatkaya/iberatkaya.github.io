@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import { isMobile } from "react-device-detect";
 import {
   FaTwitter,
   FaLinkedinIn,
@@ -32,12 +33,20 @@ export default function NavBar() {
       <Nav.Link style={linkStyle} href="#/projects">
         Projects
       </Nav.Link>
-      <Nav.Link style={linkStyle} href="#/about">
-        About
-      </Nav.Link>
+      {isMobile ? null : (
+        <Nav.Link style={linkStyle} href="#/about">
+          About
+        </Nav.Link>
+      )}
+
       <Navbar.Toggle style={{ padding: ".25rem", fontSize: 17 }} />
       <Navbar.Collapse>
         <Nav className="ml-auto" style={{ alignItems: "center" }}>
+          {!isMobile ? null : (
+            <Nav.Link style={linkStyle} href="#/about">
+              About
+            </Nav.Link>
+          )}
           <Nav.Link
             style={linkStyle}
             href="cv/cv.pdf"
