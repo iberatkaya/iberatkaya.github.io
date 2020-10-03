@@ -17,31 +17,10 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { github } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { isMobile } from "react-device-detect";
 import LazyLoad from "react-lazyload";
-
-interface Links {
-  playstore?: string;
-  appstore?: string;
-  github?: string;
-  npmurl?: string;
-  weburl?: string;
-  medium?: string;
-}
-
-export interface Project {
-  title: string;
-  projectType: string;
-  body: string;
-  date: string;
-  code?: string;
-  codeLang?: string;
-  image?: string[];
-  imagePadding?: string;
-  links?: Links;
-}
+import { Project } from "../interfaces/project";
 
 interface Props {
   project: Project;
-  id?: string;
 }
 
 export default function ProjectCard(props: Props) {
@@ -67,7 +46,6 @@ export default function ProjectCard(props: Props) {
 
   return (
     <Card
-      id={props.id}
       style={{
         maxWidth: isMobile ? "95vw" : "27vw",
         margin: 8,

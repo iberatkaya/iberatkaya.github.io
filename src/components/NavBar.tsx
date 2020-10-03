@@ -14,7 +14,9 @@ import {
 } from "react-icons/fa";
 
 export default function NavBar() {
-  let linkStyle: React.CSSProperties = { fontSize: 18 };
+  let linkStyle: React.CSSProperties = {
+    fontSize: 18,
+  };
   let iconLinkStyle: React.CSSProperties = { marginRight: 2 };
 
   let launchLink = (str: string) => window.open(str, "_blank");
@@ -24,13 +26,16 @@ export default function NavBar() {
       <Nav.Link style={linkStyle} href="#/">
         Home
       </Nav.Link>
+      <Nav.Link style={linkStyle} href="#/experience">
+        Experience
+      </Nav.Link>
       <Nav.Link style={linkStyle} href="#/projects">
         Projects
       </Nav.Link>
       <Nav.Link style={linkStyle} href="#/about">
         About
       </Nav.Link>
-      <Navbar.Toggle />
+      <Navbar.Toggle style={{ padding: ".25rem", fontSize: 17 }} />
       <Navbar.Collapse>
         <Nav className="ml-auto" style={{ alignItems: "center" }}>
           <Nav.Link

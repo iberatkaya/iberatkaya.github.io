@@ -79,8 +79,14 @@ export default function About() {
     </p>,
     <p>
       I have been working at{" "}
-      <a href="http://gmcteknoloji.com/">GMC Teknoloji</a> as a Software
-      Developer for{" "}
+      <a
+        href="http://gmcteknoloji.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GMC Teknoloji
+      </a>{" "}
+      as a Software Developer for{" "}
       {(
         _calculateMonthDiff(new Date(2020, 6)) + 1
       ) /*Include the month I started working*/

@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
-import ProjectCard, { Project } from "../components/ProjectCard";
+import ProjectCard from "../components/ProjectCard";
 import Row from "react-bootstrap/Row";
 import MusicScalesImgs from "../imgs/music_scales/imgs";
 import QRImgs from "../imgs/qr/imgs";
@@ -15,6 +15,7 @@ import GaussImgs from "../imgs/gauss/imgs";
 import PlayifyImgs from "../imgs/playify/imgs";
 import ColorBlocImgs from "../imgs/colorbloc/imgs";
 import { isMobile } from "react-device-detect";
+import { Project } from "../interfaces/project";
 const Zoom = require("react-reveal/Zoom");
 
 export default function Projects() {
@@ -358,20 +359,14 @@ Future<void> next() async {
                     marginLeft: 0,
                   }}
                 >
-                  <ProjectCard id={i.title.substring(0, 5)} project={i} />
+                  <ProjectCard project={i} />
                   {arr.length > index + 1 ? (
-                    <ProjectCard
-                      id={i.title.substring(0, 5)}
-                      project={arr[index + 1]}
-                    />
+                    <ProjectCard project={arr[index + 1]} />
                   ) : (
                     <div />
                   )}
                   {arr.length > index + 2 ? (
-                    <ProjectCard
-                      id={i.title.substring(0, 5)}
-                      project={arr[index + 2]}
-                    />
+                    <ProjectCard project={arr[index + 2]} />
                   ) : (
                     <div />
                   )}

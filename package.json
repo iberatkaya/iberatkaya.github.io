@@ -15,7 +15,9 @@
     "@types/react-router-dom": "^5.1.5",
     "@types/react-syntax-highlighter": "^11.0.4",
     "@types/react-typist": "^2.0.1",
+    "@types/react-vertical-timeline-component": "^3.0.0",
     "bootstrap": "^4.5.0",
+    "interweave": "^12.5.0",
     "react": "^16.13.1",
     "react-audio-player": "^0.13.0",
     "react-bootstrap": "^1.0.1",
@@ -28,6 +30,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-syntax-highlighter": "^12.2.1",
+    "react-vertical-timeline-component": "^3.0.2",
     "typescript": "~3.7.2"
   },
   "scripts": {
