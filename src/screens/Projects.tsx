@@ -14,6 +14,7 @@ import RobotImgs from "../imgs/robot/imgs";
 import GaussImgs from "../imgs/gauss/imgs";
 import PlayifyImgs from "../imgs/playify/imgs";
 import ColorBlocImgs from "../imgs/colorbloc/imgs";
+import ChatAppImgs from "../imgs/chatapp/imgs";
 import { isMobile } from "react-device-detect";
 import { Project } from "../interfaces/project";
 const Zoom = require("react-reveal/Zoom");
@@ -341,6 +342,19 @@ Future<void> next() async {
       links: {
         github: "https://github.com/iberatkaya/colorBloc",
         weburl: "https://iberatkaya.github.io/colorBloc/index.html",
+      },
+    },
+    {
+      body:
+        "Chat App is a messaging app built with Flutter and Node.js using Socket.io and Express.js. It is available as a website deployed on Heroku, but can also be ran as a mobile app.",
+      title: "Chat App",
+      projectType: "Flutter Web App - Express.js",
+      date: "10/2020",
+      image: ChatAppImgs,
+      imagePadding: "0",
+      links: {
+        github: "https://github.com/iberatkaya/chat_app",
+        weburl: "https://ibkchatapp.herokuapp.com/",
       },
     },
   ].reverse();
