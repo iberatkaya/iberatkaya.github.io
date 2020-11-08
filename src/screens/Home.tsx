@@ -40,7 +40,7 @@ export default function Home() {
                     I am studying Computer Engineering at Istanbul Technical
                     University.
                     <br />
-                    <a href="#/projects">Checkout my projects</a> or{" "}
+                    <a href="#/projects">Checkout my projects</a> and{" "}
                     <a href="#/about">learn more</a> about me.
                   </div>
                 </Card.Body>

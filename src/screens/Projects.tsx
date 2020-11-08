@@ -355,6 +355,7 @@ Future<void> next() async {
       links: {
         github: "https://github.com/iberatkaya/chat_app",
         weburl: "https://ibkchatapp.herokuapp.com/",
+        medium: "https://iberatkaya.medium.com/developing-a-chat-app-with-express-socket-io-and-flutter-web-47dcaeb67768",
       },
     },
   ].reverse();

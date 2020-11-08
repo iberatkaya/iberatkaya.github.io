@@ -41,7 +41,7 @@ export default function About() {
 
   const nodes: React.ReactNode[] = [
     <p>
-      {"Hello. My name is Ibrahim Berat Kaya. I study computer engineering at Istanbul Technical University and I am in my senior year. I am from State College, PA, USA. I am " +
+      {"Hello. My name is Ibrahim Berat Kaya. I study Computer Engineering at Istanbul Technical University and I am in my senior year. I am from State College, PA, USA. I am " +
         _calculateYearDiff(new Date(1998, 10, 26)).toString() +
         " years old. I currently reside in Istanbul."}
     </p>,
@@ -105,8 +105,11 @@ export default function About() {
     </p>,
     <p>
       Here are some of the courses I have taken at ITU:
-      <ul>
+      <ul style={{columns: 2}}>
         <li>Object Oriented Programming</li>
+        <li>Software Engineering</li>
+        <li>System Programming</li>
+        <li>Artificial Intelligence</li>
         <li>Data Structures</li>
         <li>Linear Algebra</li>
         <li>Numerical Methods</li>
@@ -133,6 +136,26 @@ export default function About() {
             </li>
           </ul>
         </li>
+        <li>
+          <a href="https://iberatkaya.medium.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+              Writing
+            </a>:
+          <ul>
+            <li>
+              I enjoy teaching others about the stuff I learn and I like writing.
+            </li>
+            <li>
+              I have written 2 Medium Articles and I actively write on <a href="https://www.reddit.com/user/iberatkaya"
+                target="_blank"
+                rel="noopener noreferrer">
+              Reddit</a>.
+            </li>
+          </ul>
+        </li>
+
       </ul>
     </p>,
     <p>
