@@ -33,7 +33,7 @@ export default function Home() {
             <Zoom left duration={750}>
               <Card>
                 <Card.Body>
-                  <div style={{ fontSize: "1.35rem" }}>
+                  <div style={{ fontSize: "1.25rem" }}>
                     Hello and welcome to my portfolio! My name is Ibrahim Berat
                     Kaya.
                     <br />

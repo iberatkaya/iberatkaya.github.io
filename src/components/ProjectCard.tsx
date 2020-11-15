@@ -90,17 +90,17 @@ export default function ProjectCard(props: Props) {
             <div
               style={{
                 paddingLeft:
-                  props.project.imagePadding !== undefined
+                  (props.project.imagePadding !== undefined
                     ? props.project.imagePadding
-                    : isMobile
+                    : (isMobile
                     ? "6vw"
-                    : "2vw",
+                    : "2vw")),
                 paddingRight:
-                  props.project.imagePadding !== undefined
+                  (props.project.imagePadding !== undefined
                     ? props.project.imagePadding
-                    : isMobile
+                    : (isMobile
                     ? "6vw"
-                    : "2vw",
+                    : "2vw")),
               }}
             >
               <div style={{ textAlign: "center", marginBottom: "1rem" }}>

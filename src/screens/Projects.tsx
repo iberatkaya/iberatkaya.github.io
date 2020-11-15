@@ -15,6 +15,7 @@ import GaussImgs from "../imgs/gauss/imgs";
 import PlayifyImgs from "../imgs/playify/imgs";
 import ColorBlocImgs from "../imgs/colorbloc/imgs";
 import ChatAppImgs from "../imgs/chatapp/imgs";
+import ScoreCounterImgs from "../imgs/score_counter/imgs";
 import { isMobile } from "react-device-detect";
 import { Project } from "../interfaces/project";
 const Zoom = require("react-reveal/Zoom");
@@ -356,6 +357,18 @@ Future<void> next() async {
         github: "https://github.com/iberatkaya/chat_app",
         weburl: "https://ibkchatapp.herokuapp.com/",
         medium: "https://iberatkaya.medium.com/developing-a-chat-app-with-express-socket-io-and-flutter-web-47dcaeb67768",
+      },
+    },
+    {
+      body:
+        "Score Counter is an Apple Watch App developed with Swift and SwiftUI. It lets users track the score of games with two players/teams such as soccer or basketball. This is my first SwiftUI project.",
+      title: "Score Counter",
+      projectType: "SwiftUI",
+      date: "11/2020",
+      image: ScoreCounterImgs,
+      links: {
+        appstore: "https://apps.apple.com/us/app/id1540365945",
+        github: "https://github.com/iberatkaya/score-counter",
       },
     },
   ].reverse();
