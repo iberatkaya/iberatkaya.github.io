@@ -18,10 +18,11 @@ import ChatAppImgs from "../imgs/chatapp/imgs";
 import ScoreCounterImgs from "../imgs/score_counter/imgs";
 import { isMobile } from "react-device-detect";
 import { Project } from "../interfaces/project";
-const Zoom = require("react-reveal/Zoom");
+import AppStatisticsCard from "../components/AppStatisticsCard";
+import { Fade, Zoom } from "react-awesome-reveal";
 
 export default function Projects() {
-  let myprojects: Project[] = [
+  const myprojects: Project[] = [
     {
       body:
         "Music Scales is a music theory mobile application that shows scales and chords for the piano and guitar. Developed with Flutter. 20k+ downloads at the Play Store.",
@@ -356,7 +357,8 @@ Future<void> next() async {
       links: {
         github: "https://github.com/iberatkaya/chat_app",
         weburl: "https://ibkchatapp.herokuapp.com/",
-        medium: "https://iberatkaya.medium.com/developing-a-chat-app-with-express-socket-io-and-flutter-web-47dcaeb67768",
+        medium:
+          "https://iberatkaya.medium.com/developing-a-chat-app-with-express-socket-io-and-flutter-web-47dcaeb67768",
       },
     },
     {
@@ -373,10 +375,19 @@ Future<void> next() async {
     },
   ].reverse();
 
+  const appStatistic: string[] = [
+    'Music Scales has 35k+ downloads on the <a href="https://play.google.com/store/apps/details?id=com.kaya.musicapp" target="_blank" rel="noopener noreferrer">Play Store</a> and 1k+ App Units on the <a href="https://apps.apple.com/us/app/music-scales/id1498463498" target="_blank" rel="noopener noreferrer">App Store</a>.',
+    'QR Reader & Generator has 10k+ downloads on the <a href="https://play.google.com/store/apps/details?id=com.kaya.qr_reader_and_generator" target="_blank" rel="noopener noreferrer">Play Store</a>.',
+    'Compressor has 1k+ App Units on the <a href="https://apps.apple.com/us/app/compressor-image-and-video/id1510246501" target="_blank" rel="noopener noreferrer">App Store</a>.',
+  ];
+
   return (
     <Container fluid style={{ display: "flex" }}>
       <Row style={{ justifyContent: "center" }}>
-        <Zoom fraction={isMobile ? 0.05 : 0.1} duration={750}>
+        <Fade triggerOnce direction="left" duration={650}>
+          <AppStatisticsCard items={appStatistic} />
+        </Fade>
+        <Zoom triggerOnce fraction={isMobile ? 0.05 : 0.1} duration={750}>
           {myprojects.map((i, index, arr) => {
             if (index % 3 === 0) {
               return (

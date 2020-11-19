@@ -5,15 +5,19 @@ import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Card from "react-bootstrap/Card";
 import logo from "../imgs/logo.png";
-const Zoom = require("react-reveal/Zoom");
-const Pulse = require("react-reveal/Pulse");
+import { Zoom, AttentionSeeker } from "react-awesome-reveal";
 
 export default function Home() {
   return (
     <Container fluid style={{ height: "90vh", display: "flex" }}>
       <Row style={{ margin: "auto" }}>
         <Col style={{ marginTop: "5vh", marginBottom: "5vh" }}>
-          <Pulse forever={true} duration={2500}>
+          <AttentionSeeker
+            style={{ animationIterationCount: "infinite" }}
+            triggerOnce
+            effect="pulse"
+            duration={2500}
+          >
             <Container
               style={{
                 backgroundColor: "#343a40",
@@ -28,9 +32,9 @@ export default function Home() {
             >
               <Image src={logo} fluid />
             </Container>
-          </Pulse>
+          </AttentionSeeker>
           <Container>
-            <Zoom left duration={750}>
+            <Zoom triggerOnce direction="left" duration={750}>
               <Card>
                 <Card.Body>
                   <div style={{ fontSize: "1.25rem" }}>

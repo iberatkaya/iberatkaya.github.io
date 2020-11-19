@@ -7,7 +7,7 @@ import Card from "react-bootstrap/Card";
 import Guitar from "../music/guitar/audio";
 import "./Music.css";
 import Keyboard from "../music/keyboard/audio";
-const Fade = require("react-reveal/Fade");
+import { Fade } from "react-awesome-reveal";
 
 export default function Music() {
   const [song, setSong] = useState(Guitar[0]);
@@ -18,7 +18,7 @@ export default function Music() {
         <Col md={3} />
         <Col md={6} xs={12} style={{ marginTop: "5vh", marginBottom: "5vh" }}>
           <Container style={{ marginBottom: "2vh" }}>
-            <Fade left duration={750}>
+            <Fade triggerOnce direction="left" duration={750}>
               <Card style={{ backgroundColor: "#f9f9f9" }}>
                 <Card.Body>
                   <div
@@ -111,7 +111,7 @@ export default function Music() {
             </Fade>
           </Container>
           <Container>
-            <Fade left duration={850}>
+            <Fade triggerOnce direction="left" duration={850}>
               <Card style={{ backgroundColor: "#f9f9f9" }}>
                 <Card.Body>
                   <div>

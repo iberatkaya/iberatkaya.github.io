@@ -24,11 +24,11 @@ interface Props {
 }
 
 export default function ProjectCard(props: Props) {
-  let linkIconsContainer: React.CSSProperties = {
+  const linkIconsContainer: React.CSSProperties = {
     marginRight: "0.5rem",
     marginTop: -2,
   };
-  let linkRow: React.CSSProperties = {
+  const linkRow: React.CSSProperties = {
     marginRight: 0,
     marginLeft: 0,
     alignItems: "center",
@@ -90,17 +90,17 @@ export default function ProjectCard(props: Props) {
             <div
               style={{
                 paddingLeft:
-                  (props.project.imagePadding !== undefined
+                  props.project.imagePadding !== undefined
                     ? props.project.imagePadding
-                    : (isMobile
+                    : isMobile
                     ? "6vw"
-                    : "2vw")),
+                    : "2vw",
                 paddingRight:
-                  (props.project.imagePadding !== undefined
+                  props.project.imagePadding !== undefined
                     ? props.project.imagePadding
-                    : (isMobile
+                    : isMobile
                     ? "6vw"
-                    : "2vw")),
+                    : "2vw",
               }}
             >
               <div style={{ textAlign: "center", marginBottom: "1rem" }}>

@@ -15,12 +15,12 @@ import {
 } from "react-icons/fa";
 
 export default function NavBar() {
-  let linkStyle: React.CSSProperties = {
+  const linkStyle: React.CSSProperties = {
     fontSize: 18,
   };
-  let iconLinkStyle: React.CSSProperties = { marginRight: 2 };
+  const iconLinkStyle: React.CSSProperties = { marginRight: 2 };
 
-  let launchLink = (str: string) => window.open(str, "_blank");
+  const launchLink = (str: string) => window.open(str, "_blank");
 
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">

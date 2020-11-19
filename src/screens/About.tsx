@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 import { isMobile } from "react-device-detect";
 import Image from "react-bootstrap/Image";
 import me from "../imgs/me.jpg";
-const Fade = require("react-reveal/Fade");
+import { Fade } from "react-awesome-reveal";
 
 export default function About() {
   const rowStyle = {
@@ -30,7 +30,7 @@ export default function About() {
   };
 
   const card = (text: React.ReactNode, delay: number) => (
-    <Fade left delay={delay}>
+    <Fade triggerOnce direction="left" delay={delay}>
       <Card style={{ marginBottom: "2vh" }}>
         <Card.Body>
           <div style={{ fontSize: "1.1rem" }}>{text}</div>
@@ -46,7 +46,7 @@ export default function About() {
         " years old. I currently reside in Istanbul."}
     </p>,
     <p>
-      I am interested in Full Stack Web Development, Cross-Platform Application
+      I am interested in Full Stack Development, Cross-Platform Application
       Development, System Programming, and Machine Learning.
     </p>,
     <p>
@@ -105,7 +105,7 @@ export default function About() {
     </p>,
     <p>
       Here are some of the courses I have taken at ITU:
-      <ul style={{columns: 2}}>
+      <ul style={{ columns: 2 }}>
         <li>Object Oriented Programming</li>
         <li>Software Engineering</li>
         <li>System Programming</li>
@@ -137,25 +137,32 @@ export default function About() {
           </ul>
         </li>
         <li>
-          <a href="https://iberatkaya.medium.com/"
+          <a
+            href="https://iberatkaya.medium.com/"
             target="_blank"
             rel="noopener noreferrer"
-            >
-              Writing
-            </a>:
+          >
+            Writing
+          </a>
+          :
           <ul>
             <li>
-              I enjoy teaching others about the stuff I learn and I like writing.
+              I enjoy teaching others about the stuff I learn and I like
+              writing.
             </li>
             <li>
-              I have written 2 Medium Articles and I actively write on <a href="https://www.reddit.com/user/iberatkaya"
+              I have written 2 Medium Articles and I actively write on{" "}
+              <a
+                href="https://www.reddit.com/user/iberatkaya"
                 target="_blank"
-                rel="noopener noreferrer">
-              Reddit</a>.
+                rel="noopener noreferrer"
+              >
+                Reddit
+              </a>
+              .
             </li>
           </ul>
         </li>
-
       </ul>
     </p>,
     <p>
@@ -180,40 +187,38 @@ export default function About() {
   ];
 
   return (
-    <div>
-      <Container
-        style={{ minHeight: "93vh", display: "flex", justifyContent: "center" }}
-      >
-        <Row style={rowStyle}>
-          <Col>
-            <Container>
-              {nodes.map((i, index) => {
-                if (index === 0) {
-                  return (
-                    <Row
-                      style={{
-                        justifyContent: "space-evenly",
-                        alignItems: "center",
-                      }}
-                    >
-                      <Col xs={8} md={2} style={{ marginBottom: "2vh" }}>
-                        <Fade left delay={0}>
-                          <Image src={me} roundedCircle fluid />
-                        </Fade>
-                      </Col>
-                      <Col xs={12} md={8}>
-                        {card(i, index * 20)}
-                      </Col>
-                    </Row>
-                  );
-                } else {
-                  return card(i, index * 20 * (isMobile ? 0 : 1));
-                }
-              })}
-            </Container>
-          </Col>
-        </Row>
-      </Container>
-    </div>
+    <Container
+      style={{ minHeight: "93vh", display: "flex", justifyContent: "center" }}
+    >
+      <Row style={rowStyle}>
+        <Col>
+          <Container>
+            {nodes.map((i, index) => {
+              if (index === 0) {
+                return (
+                  <Row
+                    style={{
+                      justifyContent: "space-evenly",
+                      alignItems: "center",
+                    }}
+                  >
+                    <Col xs={8} md={2} style={{ marginBottom: "2vh" }}>
+                      <Fade triggerOnce direction="left" delay={0}>
+                        <Image src={me} roundedCircle fluid />
+                      </Fade>
+                    </Col>
+                    <Col xs={12} md={8}>
+                      {card(i, index * 20)}
+                    </Col>
+                  </Row>
+                );
+              } else {
+                return card(i, index * 20 * (isMobile ? 0 : 1));
+              }
+            })}
+          </Container>
+        </Col>
+      </Row>
+    </Container>
   );
 }
