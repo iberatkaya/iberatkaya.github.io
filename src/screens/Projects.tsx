@@ -26,7 +26,7 @@ export default function Projects() {
   const myprojects: Project[] = [
     {
       body:
-        "Music Scales is a music theory mobile application that shows scales and chords for the piano and guitar. Developed with Flutter. 20k+ downloads at the Play Store.",
+        "Music Scales is a music theory mobile application that shows scales and chords for the piano and guitar. Developed with Flutter.",
       title: "Music Scales",
       projectType: "Mobile App",
       date: "12/2018 - 01/2019",
@@ -236,6 +236,7 @@ image.write_image("./test.bmp");
       title: "Robot Duel",
       projectType: "Mobile and Web Game",
       date: "05/2020",
+      imagePadding: "0rem",
       image: RobotImgs,
       links: {
         playstore:
