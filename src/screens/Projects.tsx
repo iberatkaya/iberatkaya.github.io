@@ -16,6 +16,7 @@ import PlayifyImgs from "../imgs/playify/imgs";
 import ColorBlocImgs from "../imgs/colorbloc/imgs";
 import ChatAppImgs from "../imgs/chatapp/imgs";
 import ScoreCounterImgs from "../imgs/score_counter/imgs";
+import UniPubsImgs from "../imgs/unipubs/imgs";
 import { isMobile } from "react-device-detect";
 import { Project } from "../interfaces/project";
 import AppStatisticsCard from "../components/AppStatisticsCard";
@@ -194,7 +195,7 @@ image.write_image("./test.bmp");
       projectType: "Desktop App",
       date: "03/2020",
       image: LabelerImgs,
-      imagePadding: "0",
+      imagePadding: "0rem",
       links: {
         github: "https://github.com/iberatkaya/labeler",
       },
@@ -236,7 +237,6 @@ image.write_image("./test.bmp");
       projectType: "Mobile and Web Game",
       date: "05/2020",
       image: RobotImgs,
-      imagePadding: "0",
       links: {
         playstore:
           "https://play.google.com/store/apps/details?id=com.kaya.robotduel",
@@ -269,7 +269,7 @@ fn main() {
       projectType: "Rust Project",
       date: "05/2020",
       image: GaussImgs,
-      imagePadding: "0",
+      imagePadding: "0rem",
       links: {
         github: "https://github.com/iberatkaya/gaussian-blur",
       },
@@ -327,7 +327,6 @@ Future<void> next() async {
       projectType: "Music Player Mobile App",
       date: "08/2020",
       image: PlayifyImgs,
-      imagePadding: "0",
       links: {
         appstore: "https://apps.apple.com/us/app/id1529006344",
         github: "https://github.com/iberatkaya/playify_app",
@@ -340,7 +339,6 @@ Future<void> next() async {
       projectType: "Flutter Web App",
       date: "09/2020",
       image: ColorBlocImgs,
-      imagePadding: "0",
       links: {
         github: "https://github.com/iberatkaya/colorBloc",
         weburl: "https://iberatkaya.github.io/colorBloc/index.html",
@@ -353,7 +351,7 @@ Future<void> next() async {
       projectType: "Flutter Web App - Express.js",
       date: "10/2020",
       image: ChatAppImgs,
-      imagePadding: "0",
+      imagePadding: "0rem",
       links: {
         github: "https://github.com/iberatkaya/chat_app",
         weburl: "https://ibkchatapp.herokuapp.com/",
@@ -367,10 +365,26 @@ Future<void> next() async {
       title: "Score Counter",
       projectType: "SwiftUI",
       date: "11/2020",
+      imagePadding: "1rem",
       image: ScoreCounterImgs,
       links: {
         appstore: "https://apps.apple.com/us/app/id1540365945",
         github: "https://github.com/iberatkaya/score-counter",
+      },
+    },
+    {
+      body:
+        "UniPubs is an app used in Turkey where students or stationery stores can upload study notes as PDF's or images. The uploaded study notes are then sold to users as an open market. UniPubs has an app for users who want to purchase notes and a separete merchant app for users that want to upload study notes and earn money. The main target audience is university students. Users can filter notes based on universities and faculties. Two versions of UniPubs exists. One is for students and the other is for merchants. I developed UniPubs with Flutter for the mobile apps, React.js for the web app, and Node.js for the server and payment system.",
+      title: "UniPubs",
+      projectType: "Flutter - React.js - Node.js",
+      date: "06/2020-11/2020",
+      image: UniPubsImgs,
+      links: {
+        playstore:
+          "https://play.google.com/store/apps/details?id=com.customer.unipubs",
+        appstore:
+          "https://apps.apple.com/us/app/unipubs-%C3%B6%C4%9Frenci/id1536918993",
+        weburl: "http://app.unipubs.com/",
       },
     },
   ].reverse();

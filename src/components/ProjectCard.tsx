@@ -47,10 +47,11 @@ export default function ProjectCard(props: Props) {
   return (
     <Card
       style={{
-        maxWidth: isMobile ? "95vw" : "27vw",
+        maxWidth: isMobile ? "95vw" : "26vw",
         margin: 8,
         borderColor: "#ccc",
         borderWidth: 1,
+        fontSize: "0.92rem",
       }}
     >
       <Card.Header style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}>
@@ -94,13 +95,13 @@ export default function ProjectCard(props: Props) {
                     ? props.project.imagePadding
                     : isMobile
                     ? "6vw"
-                    : "2vw",
+                    : "2.5vw",
                 paddingRight:
                   props.project.imagePadding !== undefined
                     ? props.project.imagePadding
                     : isMobile
                     ? "6vw"
-                    : "2vw",
+                    : "2.5vw",
               }}
             >
               <div style={{ textAlign: "center", marginBottom: "1rem" }}>
@@ -160,7 +161,12 @@ export default function ProjectCard(props: Props) {
       ) : (
         <div />
       )}
-      <Card.Body style={{ paddingTop: "0.75rem", paddingBottom: "0.75rem" }}>
+      <Card.Body
+        style={{
+          paddingTop: "0.75rem",
+          paddingBottom: "0.75rem",
+        }}
+      >
         <Card.Text>{props.project.body}</Card.Text>
       </Card.Body>
       {props.project.links !== undefined ? (
