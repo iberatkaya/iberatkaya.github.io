@@ -17,6 +17,8 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { github } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { isMobile } from "react-device-detect";
 import LazyLoad from "react-lazyload";
+import ImageZoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 import { Project } from "../interfaces/project";
 
 interface Props {
@@ -112,25 +114,31 @@ export default function ProjectCard(props: Props) {
                 )}
               </div>
               <LazyLoad>
-                <Carousel autoPlay={true} interval={3000} infiniteLoop={true}>
+                <Carousel autoPlay={true} interval={4000} infiniteLoop={true}>
                   {props.project.image.map((i) => (
-                    <Card.Img
-                      variant="top"
-                      src={i}
-                      style={
-                        checkIfLoading(loading!) ? { visibility: "hidden" } : {}
-                      }
-                      onLoad={() => {
-                        let arr = [...loading!];
-                        for (let i = 0; i < arr.length; i++) {
-                          if (arr[i]) {
-                            arr[i] = false;
-                            break;
+                    <ImageZoom>
+                      <picture>
+                        <Card.Img
+                          variant="top"
+                          src={i}
+                          style={
+                            checkIfLoading(loading!)
+                              ? { visibility: "hidden" }
+                              : {}
                           }
-                        }
-                        setLoading(arr);
-                      }}
-                    />
+                          onLoad={() => {
+                            let arr = [...loading!];
+                            for (let i = 0; i < arr.length; i++) {
+                              if (arr[i]) {
+                                arr[i] = false;
+                                break;
+                              }
+                            }
+                            setLoading(arr);
+                          }}
+                        />
+                      </picture>
+                    </ImageZoom>
                   ))}
                 </Carousel>
               </LazyLoad>
