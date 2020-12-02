@@ -26,20 +26,6 @@ export default function Projects() {
   const myprojects: Project[] = [
     {
       body:
-        "Music Scales is a music theory mobile application that shows scales and chords for the piano and guitar. Developed with Flutter.",
-      title: "Music Scales",
-      projectType: "Mobile App",
-      date: "12/2018 - 01/2019",
-      image: MusicScalesImgs,
-      links: {
-        playstore:
-          "https://play.google.com/store/apps/details?id=com.kaya.musicapp",
-        appstore: "https://apps.apple.com/us/app/music-scales/id1498463498",
-        github: "https://github.com/iberatkaya/Music_Scales",
-      },
-    },
-    {
-      body:
         "A QR scanner and generator mobile application developed with React Native. +10k downloads at the Play Store.",
       title: "QR Reader & Generator",
       projectType: "Mobile App",
@@ -386,6 +372,20 @@ Future<void> next() async {
         appstore:
           "https://apps.apple.com/us/app/unipubs-%C3%B6%C4%9Frenci/id1536918993",
         weburl: "http://app.unipubs.com/",
+      },
+    },
+    {
+      body:
+        "Music Scales is a music theory mobile application that shows scales and chords for the piano and guitar. Users can view and play notes and chords, view theoratical and statistical information about chords and scales. This was my first mobile app and Flutter app. After 2 years in December 2020, I made major changes to the code and revised the project.",
+      title: "Music Scales",
+      projectType: "Flutter Mobile App",
+      date: "12/2018, 12/2020",
+      image: MusicScalesImgs,
+      links: {
+        playstore:
+          "https://play.google.com/store/apps/details?id=com.kaya.musicapp",
+        appstore: "https://apps.apple.com/us/app/music-scales/id1498463498",
+        github: "https://github.com/iberatkaya/music-scales",
       },
     },
   ].reverse();

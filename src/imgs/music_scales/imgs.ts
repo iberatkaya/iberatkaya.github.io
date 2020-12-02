@@ -5,6 +5,8 @@ import img4 from "./3.png";
 import img5 from "./4.png";
 import img6 from "./5.png";
 import img7 from "./6.png";
+import img8 from "./7.png";
+import img9 from "./8.png";
 
 const imgs = [
     img1,
@@ -14,5 +16,7 @@ const imgs = [
     img5,
     img6,
     img7,
+    img8,
+    img9,
 ]
 export default imgs;
