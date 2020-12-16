@@ -25,8 +25,8 @@ export default function Home() {
                 alignItems: "center",
                 justifyContent: "center",
                 marginBottom: "3.5rem",
-                height: "30vh",
-                width: "30vh",
+                height: "28vh",
+                width: "28vh",
                 borderRadius: 12,
               }}
             >
@@ -37,7 +37,7 @@ export default function Home() {
             <Zoom triggerOnce direction="left" duration={750}>
               <Card>
                 <Card.Body>
-                  <div style={{ fontSize: "1.25rem" }}>
+                  <div style={{ fontSize: "1.2rem" }}>
                     Hello and welcome to my portfolio! My name is Ibrahim Berat
                     Kaya.
                     <br />

@@ -24,7 +24,6 @@ export default function About() {
 
   const _calculateMonthDiff = (date: Date) => {
     let months = (new Date().getFullYear() - date.getFullYear()) * 12;
-    //In JS, months stat from 0
     months += new Date().getMonth() - date.getMonth() + 1;
     return months;
   };
@@ -43,66 +42,23 @@ export default function About() {
     <p>
       {"Hello. My name is Ibrahim Berat Kaya. I study Computer Engineering at Istanbul Technical University and I am in my senior year. I am from State College, PA, USA. I am " +
         _calculateYearDiff(new Date(1998, 10, 26)).toString() +
-        " years old. I currently reside in Istanbul."}
+        " years old. I currently reside in Istanbul, Turkey."}
     </p>,
-    <p>
-      I am interested in Full Stack Development, Cross-Platform Application
-      Development, System Programming, and Machine Learning.
-    </p>,
-    <p>
-      I have worked remotely and part time for 8 months at{" "}
-      <a
-        href="https://nacsoft.com.tr/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Nacsoft Yazılım
-      </a>
-      . I developed a receipt scanning mobile app available at the{" "}
-      <a
-        href="https://apps.apple.com/app/i-expense/id1488919379"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        App Store
-      </a>{" "}
-      and{" "}
-      <a
-        href="https://play.google.com/store/apps/details?id=com.nacsoft.iexpense"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Play Store
-      </a>{" "}
-      named{" "}
-      <span style={{ color: "#333", fontWeight: "bold" }}>i-expense.</span>
-    </p>,
-    <p>
-      I have been working at{" "}
-      <a
-        href="http://gmcteknoloji.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GMC Teknoloji
-      </a>{" "}
-      as a Software Developer for{" "}
-      {(
-        _calculateMonthDiff(new Date(2020, 6)) + 1
-      ) /*Include the month I started working*/
-        .toString()}{" "}
-      months. I develop Mobile and Web Applications with React, Flutter,
-      Firebase, and Node.js.
-    </p>,
-    <p>
-      I have developed several <a href="#/projects">software projects</a> with
-      Node.js, Express, React, React Native, Flutter, Electron, Firebase, and
-      Rust.
-    </p>,
-    <p>
-      I am enthusiastic about open-source software and I like to develop
-      open-source packages. I have published 4 open-source software packages.
-    </p>,
+    <ul>
+      <li>
+        I am interested in Full Stack Development, Cross-Platform Application
+        Development, and Machine Learning.
+      </li>
+      <li>
+        I have developed several <a href="#/projects">software projects</a> with
+        Node.js, Express, React, React Native, Flutter, Electron, Firebase, and
+        Rust.
+      </li>
+      <li>
+        I am enthusiastic about open-source software and I like to develop
+        open-source packages. I have published 4 open-source software packages.
+      </li>
+    </ul>,
     <p>
       Here are some of the courses I have taken at ITU:
       <ul style={{ columns: 2 }}>

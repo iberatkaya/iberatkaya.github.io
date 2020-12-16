@@ -19,8 +19,7 @@ import ScoreCounterImgs from "../imgs/score_counter/imgs";
 import UniPubsImgs from "../imgs/unipubs/imgs";
 import { isMobile } from "react-device-detect";
 import { Project } from "../interfaces/project";
-import AppStatisticsCard from "../components/AppStatisticsCard";
-import { Fade, Zoom } from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
 
 export default function Projects() {
   const myprojects: Project[] = [
@@ -363,8 +362,8 @@ Future<void> next() async {
       body:
         "UniPubs is an app used in Turkey where students or stationery stores can upload study notes as PDF's or images. The uploaded study notes are then sold to users as an open market. UniPubs has an app for users who want to purchase notes and a separete merchant app for users that want to upload study notes and earn money. The main target audience is university students. Users can filter notes based on universities and faculties. Two versions of UniPubs exists. One is for students and the other is for merchants. I developed UniPubs with Flutter for the mobile apps, React.js for the web app, and Node.js for the server and payment system.",
       title: "UniPubs",
-      projectType: "Flutter - React.js - Node.js",
-      date: "06/2020-11/2020",
+      projectType: "Flutter - React - Node.js",
+      date: "06/2020 - 11/2020",
       image: UniPubsImgs,
       links: {
         playstore:
@@ -399,9 +398,6 @@ Future<void> next() async {
   return (
     <Container fluid style={{ display: "flex" }}>
       <Row style={{ justifyContent: "center" }}>
-        <Fade triggerOnce direction="left" duration={650}>
-          <AppStatisticsCard items={appStatistic} />
-        </Fade>
         <Zoom triggerOnce fraction={isMobile ? 0.05 : 0.1} duration={750}>
           {myprojects.map((i, index, arr) => {
             if (index % 3 === 0) {
