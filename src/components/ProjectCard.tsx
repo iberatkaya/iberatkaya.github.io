@@ -152,18 +152,18 @@ export default function ProjectCard(props: Props) {
       {props.project.code !== undefined ? <hr /> : <div />}
       {props.project.code !== undefined ? (
         <div>
-          <SyntaxHighlighter
-            language={
-              props.project.codeLang !== undefined
-                ? props.project.codeLang
-                : "javascript"
-            }
-            style={github}
-            showLineNumbers={true}
-            lineNumberStyle={{ color: "#777" }}
-          >
-            {props.project.code}
-          </SyntaxHighlighter>
+          <Card.Body style={{ padding: "0.35rem" }}>
+            <SyntaxHighlighter
+              language={
+                props.project.codeLang !== undefined
+                  ? props.project.codeLang
+                  : "javascript"
+              }
+              style={github}
+            >
+              {props.project.code}
+            </SyntaxHighlighter>
+          </Card.Body>
           <hr />
         </div>
       ) : (

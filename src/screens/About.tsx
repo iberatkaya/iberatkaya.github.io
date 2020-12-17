@@ -51,8 +51,8 @@ export default function About() {
       </li>
       <li>
         I have developed several <a href="#/projects">software projects</a> with
-        Node.js, Express, React, React Native, Flutter, Electron, Firebase, and
-        Rust.
+        Node.js, React, React Native, Flutter, Swift & SwiftUI, Firebase,
+        Express.js, Electron, and Rust.
       </li>
       <li>
         I am enthusiastic about open-source software and I like to develop
