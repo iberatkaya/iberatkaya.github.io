@@ -403,8 +403,8 @@ Future<void> next() async {
     imagePadding: "0",
     image: ImageEditorImgs,
     links: {
-      weburl: "https://github.com/iberatkaya/image-editor",
-      github: "https://iberatkaya.github.io/image-editor",
+      weburl: "https://iberatkaya.github.io/image-editor",
+      github: "https://github.com/iberatkaya/image-editor",
     },
   },
 ].reverse();
