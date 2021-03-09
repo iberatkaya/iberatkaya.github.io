@@ -410,7 +410,7 @@ Future<void> next() async {
   },
   {
     body:
-      "Unique Color is a simple color generator. It generates a time invariant hex color from a string. Inspired by string-to-color.",
+      "Unique Color is a simple color generator. It generates a time invariant hex color from a string. Inspired by the string-to-color NPM Package by @Gustu.",
     code: `//Generate a time invariant color
 String color1 = generateColor("i am a string");
     
