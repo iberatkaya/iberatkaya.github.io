@@ -15,6 +15,7 @@ import ScoreCounterImgs from "../imgs/score_counter/imgs";
 import UniPubsImgs from "../imgs/unipubs/imgs";
 import AdEarningsImgs from "../imgs/adearnings/imgs";
 import ImageEditorImgs from "../imgs/image_editor/imgs";
+import GitWatchImgs from "../imgs/git_watch/imgs";
 import { Project } from "../interfaces/project";
 
 export const myprojects: Project[] = [
@@ -405,6 +406,39 @@ Future<void> next() async {
     links: {
       weburl: "https://iberatkaya.github.io/image-editor",
       github: "https://github.com/iberatkaya/image-editor",
+    },
+  },
+  {
+    body:
+      "Unique Color is a simple color generator. It generates a time invariant hex color from a string. Inspired by string-to-color.",
+    code: `//Generate a time invariant color
+String color1 = generateColor("i am a string");
+    
+//color1 will be equal to color2
+String color2 = generateColor("i am a string");
+
+//color3 will be different than color1 and color2
+String color3 = generateColor("i am a different string");
+`,
+    title: "Unique Color",
+    projectType: "Dart Package",
+    date: "02/2021",
+    links: {
+      weburl: "https://pub.dev/packages/unique_color",
+      github: "https://github.com/iberatkaya/unique_color",
+    },
+  },
+  {
+    body:
+      "Git Watch is a GitHub client app for watchOS. It is a SwiftUI app that uses GitHub's REST API and OAuth authentication.",
+    title: "Git Watch",
+    projectType: "SwiftUI - iOS & watchOS App",
+    date: "03/2021",
+    imagePadding: "0",
+    image: GitWatchImgs,
+    links: {
+      appstore: "https://apps.apple.com/us/app/git-watch-github/id1555218889",
+      github: "https://github.com/iberatkaya/github-watch",
     },
   },
 ].reverse();
