@@ -3,17 +3,22 @@ import Container from "react-bootstrap/Container";
 import ProjectCard from "../components/ProjectCard";
 import Row from "react-bootstrap/Row";
 import { isMobile } from "react-device-detect";
-import { Zoom } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 import { myprojects } from "../projects/projects";
 
 export default function Projects() {
   return (
     <Container fluid style={{ display: "flex" }}>
       <Row style={{ justifyContent: "center" }}>
-        <Zoom triggerOnce fraction={isMobile ? 0.05 : 0.1} duration={750}>
-          {myprojects.map((i, index, arr) => {
-            if (index % 3 === 0) {
-              return (
+        {myprojects.map((i, index, arr) => {
+          if (index % 3 === 0) {
+            return (
+              <Slide
+                direction={index % 2 === 0 ? "left" : "right"}
+                triggerOnce
+                fraction={isMobile ? 0.05 : 0.1}
+                duration={750}
+              >
                 <Row
                   style={{
                     justifyContent: "center",
@@ -33,11 +38,11 @@ export default function Projects() {
                     <div />
                   )}
                 </Row>
-              );
-            }
-            return <div></div>;
-          })}
-        </Zoom>
+              </Slide>
+            );
+          }
+          return <div></div>;
+        })}
       </Row>
     </Container>
   );
