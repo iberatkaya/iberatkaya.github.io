@@ -16,6 +16,7 @@ import UniPubsImgs from "../imgs/unipubs/imgs";
 import AdEarningsImgs from "../imgs/adearnings/imgs";
 import ImageEditorImgs from "../imgs/image_editor/imgs";
 import GitWatchImgs from "../imgs/git_watch/imgs";
+import DrawAnimationImgs from "../imgs/draw_animation/imgs";
 import { Project } from "../interfaces/project";
 
 export const myprojects: Project[] = [
@@ -439,6 +440,18 @@ String color3 = generateColor("i am a different string");
     links: {
       appstore: "https://apps.apple.com/us/app/git-watch-github/id1555218889",
       github: "https://github.com/iberatkaya/github-watch",
+    },
+  },
+  {
+    body:
+      "Draw Animation is a simple iOS App built with UIKit. It draws circles and rectangles to the screen. You can save the screen and use it as your wallpaper.",
+    title: "Draw Animation",
+    projectType: "iOS App",
+    date: "03/2021",
+    imagePadding: "0",
+    image: DrawAnimationImgs,
+    links: {
+      github: "https://github.com/iberatkaya/draw-animation",
     },
   },
 ].reverse();
