@@ -16,6 +16,10 @@ export default function About() {
     paddingBottom: "3vh",
   };
 
+  const listItemStyle = {
+    marginRight: 8,
+  };
+
   const _calculateYearDiff = (date: Date) => {
     const ageDifMs = Date.now() - date.getTime();
     const ageDate = new Date(ageDifMs);
@@ -47,33 +51,72 @@ export default function About() {
     <ul>
       <li>
         I am interested in Full Stack Development, Cross-Platform Application
-        Development, and Machine Learning.
+        Development, iOS Development, and Machine Learning.
       </li>
       <li>
         I have developed several <a href="#/projects">software projects</a> with
-        Node.js, React, React Native, Flutter, Swift & SwiftUI, Firebase,
-        Express.js, Electron, and Rust.
+        Node.js, Flutter, Swift & SwiftUI, Firebase, React.js, React Native,
+        Express.js, Electron.js, and Rust.
+      </li>
+      <li>
+        I have several iOS and watchOS apps developed with Flutter, React
+        Native, SwiftUI, and Swift & UIKit available on the{" "}
+        <a
+          href="https://apps.apple.com/us/developer/selim-ustel/id1498230191"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          App Store
+        </a>
+        . I also have several Android apps developed with Flutter and React
+        Native available on the{" "}
+        <a
+          href="https://play.google.com/store/apps/developer?id=IBK+Apps"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Play Store
+        </a>
+        .
       </li>
       <li>
         I am enthusiastic about open-source software and I like to develop
-        open-source packages. I have published 4 open-source software packages.
+        open-source packages. I have published 5 open-source software packages
+        on{" "}
+        <a
+          href="https://www.npmjs.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          npm
+        </a>
+        ,{" "}
+        <a href="https://pub.dev" target="_blank" rel="noopener noreferrer">
+          pub.dev
+        </a>
+        , and{" "}
+        <a href="https://crates.io" target="_blank" rel="noopener noreferrer">
+          crates.io
+        </a>
+        .
       </li>
     </ul>,
     <p>
       Here are some of the courses I have taken at ITU:
       <ul style={{ columns: 2 }}>
-        <li>Object Oriented Programming</li>
-        <li>Software Engineering</li>
-        <li>System Programming</li>
-        <li>Artificial Intelligence</li>
-        <li>Data Structures</li>
-        <li>Linear Algebra</li>
-        <li>Numerical Methods</li>
-        <li>Operating Systems</li>
-        <li>Analysis of Algorithms</li>
-        <li>Learning From Data</li>
-        <li>Database Systems</li>
-        <li>Digital Circuits</li>
+        <li style={listItemStyle}>Object Oriented Programming</li>
+        <li style={listItemStyle}>Software Engineering</li>
+        <li style={listItemStyle}>System Programming</li>
+        <li style={listItemStyle}>Artificial Intelligence</li>
+        <li style={listItemStyle}>Data Structures</li>
+        <li style={listItemStyle}>Linear Algebra</li>
+        <li style={listItemStyle}>Numerical Methods</li>
+        <li style={listItemStyle}>Operating Systems</li>
+        <li style={listItemStyle}>Analysis of Algorithms</li>
+        <li style={listItemStyle}>Learning From Data</li>
+        <li style={listItemStyle}>Database Systems</li>
+        <li style={listItemStyle}>Digital Circuits</li>
       </ul>
     </p>,
     <p>
@@ -107,7 +150,7 @@ export default function About() {
               writing.
             </li>
             <li>
-              I have written 2 Medium Articles and I actively write on{" "}
+              I have written 2 Medium Articles and I occasionally write on{" "}
               <a
                 href="https://www.reddit.com/user/iberatkaya"
                 target="_blank"
@@ -160,7 +203,11 @@ export default function About() {
                   >
                     <Col xs={8} md={2} style={{ marginBottom: "2vh" }}>
                       <Fade triggerOnce direction="left" delay={0}>
-                        <Image src={me} roundedCircle fluid />
+                        <Image
+                          src={"https://github.com/iberatkaya.png?size=400"}
+                          roundedCircle
+                          fluid
+                        />
                       </Fade>
                     </Col>
                     <Col xs={12} md={8}>

@@ -357,7 +357,7 @@ Future<void> next() async {
   },
   {
     body:
-      "UniPubs is an app used in Turkey where students or stationery stores can upload study notes as PDF's or images. I developed UniPubs while I was working at GMC Teknoloji. The uploaded study notes are then sold to users as an open market. UniPubs has an app for users who want to purchase notes and a separete merchant app for users that want to upload study notes and earn money. The main target audience is university students. Users can filter notes based on universities and faculties. Two versions of UniPubs exists. One is for students and the other is for merchants. I developed UniPubs with Flutter for the mobile apps, React.js for the web app, and Node.js for the server and payment system.",
+      "UniPubs is an app used in Turkey where students or stationery stores can upload study notes as PDF's or images. I developed UniPubs while I was working at GMC Teknoloji. The uploaded study notes are then sold to users as an open market. UniPubs has an app for users who want to purchase notes and a separete merchant app for users that want to upload study notes and earn money. The main target audience is university students. Users can filter notes based on universities and faculties. Two versions of UniPubs exists. One is for students and the other is for merchants. The merchant app was released but later removed. I developed UniPubs with Flutter for the mobile apps, React.js for the web app, and Node.js for the server and payment system.",
     title: "UniPubs",
     projectType: "Flutter - React - Node.js",
     date: "06/2020 - 11/2020",
@@ -411,7 +411,7 @@ Future<void> next() async {
   },
   {
     body:
-      "Unique Color is a simple color generator. It generates a time invariant hex color from a string. Inspired by the string-to-color NPM Package by @Gustu.",
+      "Unique Color is an open-source Dart package. It is a simple color generator. It generates a time invariant hex color from a string. Inspired by the string-to-color NPM Package by @Gustu.",
     code: `//Generate a time invariant color
 String color1 = generateColor("i am a string");
     

@@ -38,11 +38,16 @@ export default function Home() {
               <Card>
                 <Card.Body>
                   <div style={{ fontSize: "1.2rem" }}>
-                    Hello and welcome to my portfolio! My name is Ibrahim Berat
-                    Kaya.
-                    <br />
-                    I am studying Computer Engineering at Istanbul Technical
-                    University.
+                    Hello, I am Ibrahim Berat Kaya. Welcome to my portfolio!
+                    <br />I am a 4th year Computer Engineering student at{" "}
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://www.itu.edu.tr"
+                    >
+                      ITU
+                    </a>
+                    .
                     <br />
                     <a href="#/projects">Checkout my projects</a> and{" "}
                     <a href="#/about">learn more</a> about me.
