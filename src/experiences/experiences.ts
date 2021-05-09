@@ -2,6 +2,7 @@ import GMCImg from "../imgs/experience/gmc.png";
 import NacsoftImg from "../imgs/experience/nacsoft.png";
 import ACMImg from "../imgs/experience/acm.png";
 import SimitLabImg from "../imgs/experience/s.png";
+import SpontyImg from "../imgs/experience/sponty.png";
 import { Experience as IExperience } from "../interfaces/experience";
 
 export const experiences: IExperience[] = [
@@ -47,5 +48,16 @@ export const experiences: IExperience[] = [
     image: SimitLabImg,
     companyLink: "https://simitlab.itu.edu.tr",
     renderAsHTML: false,
+  },
+  {
+    title: "Co-Founder & Software Developer",
+    date: "September 2020 - Present",
+    description:
+      '<p>Sponty is a social media platform that lets people with similar interests organize and join spontaneous events. Sponty is available on the <a href="https://apps.apple.com/us/app/sponty-spontaneous-events/id1558525532" target="_blank" rel="noopener noreferrer">App Store</a> and the <a href="https://play.google.com/store/apps/details?id=com.sponty.android" target="_blank" rel="noopener noreferrer">Play Store</a>.</p> <p>I am one of the founding members of Sponty. Sponty is developing the Mobile App using Flutter, the Web Page using React.js, and the Back-End using Firebase, Google Cloud, and Node.js.</p><p>Features:<ul><li>Users can record videos to create and join events.</li><li>Users in the same event can chat.</li><li>Users can see events and other users on the map.</li></ul></p>',
+    location: "Istanbul, Turkey",
+    subtitle: "Sponty",
+    image: SpontyImg,
+    companyLink: "https://sponty.app",
+    renderAsHTML: true,
   },
 ].reverse();

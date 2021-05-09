@@ -17,6 +17,8 @@ import AdEarningsImgs from "../imgs/adearnings/imgs";
 import ImageEditorImgs from "../imgs/image_editor/imgs";
 import GitWatchImgs from "../imgs/git_watch/imgs";
 import DrawAnimationImgs from "../imgs/draw_animation/imgs";
+import SpontyImgs from "../imgs/sponty/imgs";
+import NotesImgs from "../imgs/notes/imgs";
 import { Project } from "../interfaces/project";
 
 export const myprojects: Project[] = [
@@ -452,6 +454,37 @@ String color3 = generateColor("i am a different string");
     image: DrawAnimationImgs,
     links: {
       github: "https://github.com/iberatkaya/draw-animation",
+    },
+  },
+  {
+    body:
+      "Sponty is a social media platform that lets people with similar interests organize and join spontaneous events. I am a Co-Founder of Sponty. Sponty is using Flutter for the Mobile App, the React.js for the Web Page, Firebase, Google Cloud, and Node.js for the Back-End.",
+    title: "Sponty",
+    projectType: "Flutter App",
+    date: "09/2020 - present",
+    imagePadding: "0",
+    image: SpontyImgs,
+    links: {
+      playstore:
+        "https://play.google.com/store/apps/details?id=com.sponty.android",
+      appstore:
+        "https://apps.apple.com/us/app/sponty-spontaneous-events/id1558525532",
+      weburl: "https://sponty.app/",
+    },
+  },
+  {
+    body:
+      "Simple Notes is an iOS app built with UIKit. I built both the server and the iOS app. The server is a REST API built with Express.js, MongoDB, Passport.js, tsoa, and TypeScript.",
+    title: "Simple Notes",
+    projectType: "iOS App & Express.js Server",
+    date: "04/2021 - 05/2021",
+    imagePadding: "0",
+    image: NotesImgs,
+    links: {
+      github: "https://github.com/iberatkaya/notes-server",
+      appstore:
+        "https://apps.apple.com/us/app/simple-notes-save-notes/id1566712582",
+      weburl: "https://ibk-note-app.herokuapp.com/docs/",
     },
   },
 ].reverse();

@@ -9,7 +9,6 @@ import { experiences } from "../experiences/experiences";
 import "./Experience.css";
 
 export default function Experience() {
-
   return (
     <VerticalTimeline>
       {experiences.map((i) => (
@@ -18,7 +17,7 @@ export default function Experience() {
           date={i.date}
           iconStyle={{ backgroundColor: "white" }}
           icon={
-            i.image !== undefined ?
+            i.image !== undefined ? (
               <img
                 src={i.image}
                 width="100%"
@@ -26,11 +25,11 @@ export default function Experience() {
                 style={{ borderRadius: "50%" }}
                 alt={i.subtitle}
               />
-              : undefined
+            ) : undefined
           }
         >
           <h3
-            style={{ paddingBottom: ".35rem" }}
+            style={{ paddingBottom: ".35rem", fontSize: "1.5rem" }}
             className="vertical-timeline-element-title"
           >
             {i.title}
