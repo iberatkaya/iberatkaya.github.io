@@ -16,9 +16,10 @@ import {
 
 export default function NavBar() {
   const linkStyle: React.CSSProperties = {
-    fontSize: 18,
+    fontSize: 16,
   };
   const iconLinkStyle: React.CSSProperties = { marginRight: 2 };
+  const iconSize = 22;
 
   const launchLink = (str: string) => window.open(str, "_blank");
 
@@ -53,7 +54,7 @@ export default function NavBar() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaIdCard size={24} />
+            <FaIdCard size={iconSize} />
           </Nav.Link>
           <Nav.Link
             style={iconLinkStyle}
@@ -61,13 +62,13 @@ export default function NavBar() {
               launchLink("https://www.linkedin.com/in/ibrahim-berat-kaya/")
             }
           >
-            <FaLinkedinIn size={24} />
+            <FaLinkedinIn size={iconSize} />
           </Nav.Link>
           <Nav.Link
             style={iconLinkStyle}
             onClick={() => launchLink("https://github.com/iberatkaya")}
           >
-            <FaGithub size={24} />
+            <FaGithub size={iconSize} />
           </Nav.Link>
           <Nav.Link
             style={iconLinkStyle}
@@ -80,7 +81,7 @@ export default function NavBar() {
               );
             }}
           >
-            <FaAppStore size={24} />
+            <FaAppStore size={iconSize} />
           </Nav.Link>
           <Nav.Link
             style={iconLinkStyle}
@@ -90,28 +91,28 @@ export default function NavBar() {
               )
             }
           >
-            <FaGooglePlay size={24} />
+            <FaGooglePlay size={iconSize} />
           </Nav.Link>
           <Nav.Link
             style={iconLinkStyle}
             onClick={() => launchLink("https://www.reddit.com/user/iberatkaya")}
           >
-            <FaReddit size={24} />
+            <FaReddit size={iconSize} />
           </Nav.Link>
           <Nav.Link
             style={iconLinkStyle}
             onClick={() => launchLink("https://twitter.com/iberatkaya")}
           >
-            <FaTwitter size={24} />
+            <FaTwitter size={iconSize} />
           </Nav.Link>
           <Nav.Link
             style={iconLinkStyle}
             onClick={() => launchLink("https://medium.com/@iberatkaya")}
           >
-            <FaMediumM size={24} />
+            <FaMediumM size={iconSize} />
           </Nav.Link>
           <Nav.Link style={iconLinkStyle} href="#/music">
-            <FaMusic size={24} />
+            <FaMusic size={iconSize} />
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
