@@ -39,7 +39,7 @@ export default function Home() {
                 <Card.Body>
                   <div style={{ fontSize: "1.2rem" }}>
                     Hello, I am Ibrahim Berat Kaya. Welcome to my portfolio!
-                    <br />I am a 4th year Computer Engineering student at{" "}
+                    <br />I am a senior computer engineering student at{" "}
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
@@ -49,7 +49,7 @@ export default function Home() {
                     </a>
                     .
                     <br />
-                    <a href="#/projects">Checkout my projects</a> and{" "}
+                    Checkout <a href="#/projects">my projects</a> and{" "}
                     <a href="#/about">learn more</a> about me.
                   </div>
                 </Card.Body>

@@ -23,8 +23,7 @@ import { Project } from "../interfaces/project";
 
 export const myprojects: Project[] = [
   {
-    body:
-      "A QR scanner and generator mobile application developed with React Native. +10k downloads at the Play Store.",
+    body: "A QR scanner and generator mobile application developed with React Native. +10k downloads at the Play Store.",
     title: "QR Reader & Generator",
     projectType: "Mobile App",
     date: "06/2019",
@@ -38,8 +37,7 @@ export const myprojects: Project[] = [
     },
   },
   {
-    body:
-      "MeetUps With Friends is a group meetup organizer application developed with React, Express, and React Native. It is currently discontinued, but the source code is still available.",
+    body: "MeetUps With Friends is a group meetup organizer application developed with React, Express, and React Native. It is currently discontinued, but the source code is still available.",
     title: "MeetUps With Friends",
     projectType: "Mobile and Web App",
     date: "11/2019",
@@ -49,8 +47,7 @@ export const myprojects: Project[] = [
     },
   },
   {
-    body:
-      "Image Augmentation is an open-source NPM Package designed to augment images for training models in machine learning.",
+    body: "Image Augmentation is an open-source NPM Package designed to augment images for training models in machine learning.",
     code: `
 import { ImageAugmentation } from 'image-augmentation';
 
@@ -88,8 +85,7 @@ ia.executeMultiple({
     },
   },
   {
-    body:
-      "A Turkish receipt scanning mobile application developed with React Native and Google Cloud Vision. Developed for Nacsoft Yazılım while I was working there part time as a software developer.",
+    body: "A Turkish receipt scanning mobile application developed with React Native and Google Cloud Vision. Developed for Nacsoft Yazılım while I was working there part time as a software developer.",
     title: "i-expense",
     projectType: "Mobile App",
     date: "06/2019 - 01/2020",
@@ -101,8 +97,7 @@ ia.executeMultiple({
     },
   },
   {
-    body:
-      "MouseBot is an open-source NPM Package built with Rust and Node.js using native Neon bindings. It is a cross-platform desktop automation package.",
+    body: "MouseBot is an open-source NPM Package built with Rust and Node.js using native Neon bindings. It is a cross-platform desktop automation package.",
     code: `
 import { Bot } from 'mousebot';
     
@@ -143,8 +138,7 @@ chain();
     },
   },
   {
-    body:
-      "Fractal Gen is an open-source Rust Crate that generates fractals as BMP images with 0 dependencies. The BMP images are created natively within the library.",
+    body: "Fractal Gen is an open-source Rust Crate that generates fractals as BMP images with 0 dependencies. The BMP images are created natively within the library.",
     code: `
 // Create a Fractal from the pixels.
 let mut image = Fractal::new(pixels);
@@ -173,8 +167,7 @@ image.write_image("./test.bmp");
     },
   },
   {
-    body:
-      "Labeler is an Electron App that helps users label images. Simply open a directory, select your output folder name and class names, and begin labelling. Labeler will automatically copy your labeled images to the desired output folder. It was designed to help labelling images by providing a GUI and automatically doing the copying operation. The project started when I thought of a way to help me simplify classifing a dataset.",
+    body: "Labeler is an Electron App that helps users label images. Simply open a directory, select your output folder name and class names, and begin labelling. Labeler will automatically copy your labeled images to the desired output folder. It was designed to help labelling images by providing a GUI and automatically doing the copying operation. The project started when I thought of a way to help me simplify classifing a dataset.",
     title: "Labeler",
     projectType: "Desktop App",
     date: "03/2020",
@@ -185,8 +178,7 @@ image.write_image("./test.bmp");
     },
   },
   {
-    body:
-      "Poemify is a social poem sharing mobile application developed with React Native and Firebase. Users may create accounts, like, share, and save poems.",
+    body: "Poemify is a social poem sharing mobile application developed with React Native and Firebase. Users may create accounts, like, share, and save poems.",
     title: "Poemify",
     projectType: "Mobile App",
     date: "03/2020 - 04/2020",
@@ -200,8 +192,7 @@ image.write_image("./test.bmp");
     },
   },
   {
-    body:
-      "Compressor is a mobile application developed with Flutter. It compresses images and videos.",
+    body: "Compressor is a mobile application developed with Flutter. It compresses images and videos.",
     title: "Compressor",
     projectType: "Mobile App",
     date: "04/2020",
@@ -215,8 +206,7 @@ image.write_image("./test.bmp");
     },
   },
   {
-    body:
-      "Robot Duel is a Flutter App built with Flame. It is a mobile and web game in which you play against corrupt robots. Earn gold while fighting. Spend the gold to gain powerups. As the level increases, the robots get more powerful. It is also available as a web app, but keep in mind that Flutter Web is still in beta, so the performance may not be optimal and the startup time is significant.",
+    body: "Robot Duel is a Flutter App built with Flame. It is a mobile and web game in which you play against corrupt robots. Earn gold while fighting. Spend the gold to gain powerups. As the level increases, the robots get more powerful. It is also available as a web app, but keep in mind that Flutter Web is still in beta, so the performance may not be optimal and the startup time is significant.",
     title: "Robot Duel",
     projectType: "Mobile and Web Game",
     date: "05/2020",
@@ -231,8 +221,7 @@ image.write_image("./test.bmp");
     },
   },
   {
-    body:
-      "Gaussian Blur is a simple Rust Project that applies Gaussian Blur to images.",
+    body: "Gaussian Blur is a simple Rust Project that applies Gaussian Blur to images.",
     title: "Gaussian Blur",
     code: ` 
 extern crate image;
@@ -260,8 +249,7 @@ fn main() {
     },
   },
   {
-    body:
-      "Playify is an open-source Flutter package for playing music and fetching music metadata from the music library. It was built using iOS’s Music Player Library and Flutter’s Method Channel. It is available on pub.dev.",
+    body: "Playify is an open-source Flutter package for playing music and fetching music metadata from the music library. It was built using iOS’s Music Player Library and Flutter’s Method Channel. It is available on pub.dev.",
     code: `
 import 'package:playify/playify.dart';
 
@@ -306,8 +294,7 @@ Future<void> next() async {
     },
   },
   {
-    body:
-      "The Playify App is an iOS Music Player app developed with Flutter and The Playify Plugin. Users can play/pause/seek songs, browse their media libraries.",
+    body: "The Playify App is an iOS Music Player app developed with Flutter and The Playify Plugin. Users can play/pause/seek songs, browse their media libraries.",
     title: "Playify (App)",
     projectType: "Music Player Mobile App",
     date: "08/2020",
@@ -318,8 +305,7 @@ Future<void> next() async {
     },
   },
   {
-    body:
-      "ColorBloc is a demo app built with Flutter using Bloc and CustomPaint. It is available as a website, but can also be ran as a mobile app.",
+    body: "ColorBloc is a demo app built with Flutter using Bloc and CustomPaint. It is available as a website, but can also be ran as a mobile app.",
     title: "ColorBloc",
     projectType: "Flutter Web App",
     date: "09/2020",
@@ -330,8 +316,7 @@ Future<void> next() async {
     },
   },
   {
-    body:
-      "Chat App is a messaging app built with Flutter and Node.js using Socket.io and Express.js. It is available as a website deployed on Heroku, but can also be ran as a mobile app.",
+    body: "Chat App is a messaging app built with Flutter and Node.js using Socket.io and Express.js. It is available as a website deployed on Heroku, but can also be ran as a mobile app.",
     title: "Chat App",
     projectType: "Flutter Web App - Express.js",
     date: "10/2020",
@@ -345,8 +330,7 @@ Future<void> next() async {
     },
   },
   {
-    body:
-      "Score Counter is a watchOS App developed with Swift and SwiftUI. It lets users track the score of games with two players/teams such as soccer or basketball. This is my first SwiftUI project.",
+    body: "Score Counter is a watchOS App developed with Swift and SwiftUI. It lets users track the score of games with two players/teams such as soccer or basketball. This is my first SwiftUI project.",
     title: "Score Counter",
     projectType: "SwiftUI - watchOS App",
     date: "11/2020",
@@ -358,8 +342,7 @@ Future<void> next() async {
     },
   },
   {
-    body:
-      "UniPubs is an app used in Turkey where students or stationery stores can upload study notes as PDF's or images. I developed UniPubs while I was working at GMC Teknoloji. The uploaded study notes are then sold to users as an open market. UniPubs has an app for users who want to purchase notes and a separete merchant app for users that want to upload study notes and earn money. The main target audience is university students. Users can filter notes based on universities and faculties. Two versions of UniPubs exists. One is for students and the other is for merchants. The merchant app was released but later removed. I developed UniPubs with Flutter for the mobile apps, React.js for the web app, and Node.js for the server and payment system.",
+    body: "UniPubs is an app used in Turkey where students or stationery stores can upload study notes as PDF's or images. I developed UniPubs while I was working at GMC Teknoloji. The uploaded study notes are then sold to users as an open market. UniPubs has an app for users who want to purchase notes and a separete merchant app for users that want to upload study notes and earn money. The main target audience is university students. Users can filter notes based on universities and faculties. Two versions of UniPubs exists. One is for students and the other is for merchants. The merchant app was released but later removed. I developed UniPubs with Flutter for the mobile apps, React.js for the web app, and Node.js for the server and payment system.",
     title: "UniPubs",
     projectType: "Flutter - React - Node.js",
     date: "06/2020 - 11/2020",
@@ -373,8 +356,7 @@ Future<void> next() async {
     },
   },
   {
-    body:
-      "Music Scales is a music theory mobile application that shows scales and chords for the piano and guitar. Users can view and play notes and chords, view theoratical and statistical information about chords and scales. This was my first mobile app and Flutter app. After 2 years in December 2020, I made major changes to the code and revised the project.",
+    body: "Music Scales is a music theory mobile application that shows scales and chords for the piano and guitar. Users can view and play notes and chords, view theoratical and statistical information about chords and scales. This was my first mobile app and Flutter app. After 2 years in December 2020, I made major changes to the code and revised the project.",
     title: "Music Scales",
     projectType: "Flutter Mobile App",
     date: "12/2018, 12/2020",
@@ -387,8 +369,7 @@ Future<void> next() async {
     },
   },
   {
-    body:
-      "Ad Earnings is a iOS and watchOS App made with Swift and Swift UI. It displays AdMob analytics of a user such as their estimated earnings or clicks in a given date range. Developed using WatchConnectivity to communicate between the watchOS App and the iOS App.",
+    body: "Ad Earnings is a iOS and watchOS App made with Swift and Swift UI. It displays AdMob analytics of a user such as their estimated earnings or clicks in a given date range. Developed using WatchConnectivity to communicate between the watchOS App and the iOS App.",
     title: "Ad Earnings",
     projectType: "SwiftUI - iOS & watchOS App",
     date: "12/2020",
@@ -399,8 +380,7 @@ Future<void> next() async {
     },
   },
   {
-    body:
-      "Image Editor is a simple tool that can resize images to desired dimensions, can make images grayscale, and can apply Gaussian blur to images. It was built with Vapor for the Backend as a REST API, and React.js for the Frontend as a Web App.",
+    body: "Image Editor is a simple tool that can resize images to desired dimensions, can make images grayscale, and can apply Gaussian blur to images. It was built with Vapor for the Backend as a REST API, and React.js for the Frontend as a Web App.",
     title: "Image Editor",
     projectType: "Vapor - React",
     date: "12/2020",
@@ -412,8 +392,7 @@ Future<void> next() async {
     },
   },
   {
-    body:
-      "Unique Color is an open-source Dart package. It is a simple color generator. It generates a time invariant hex color from a string. Inspired by the string-to-color NPM Package by @Gustu.",
+    body: "Unique Color is an open-source Dart package. It is a simple color generator. It generates a time invariant hex color from a string. Inspired by the string-to-color NPM Package by @Gustu.",
     code: `//Generate a time invariant color
 String color1 = generateColor("i am a string");
     
@@ -432,8 +411,7 @@ String color3 = generateColor("i am a different string");
     },
   },
   {
-    body:
-      "Git Watch is a GitHub client app for watchOS. It is a SwiftUI app that uses GitHub's REST API and OAuth authentication.",
+    body: "Git Watch is a GitHub client app for watchOS. It is a SwiftUI app that uses GitHub's REST API and OAuth authentication.",
     title: "Git Watch",
     projectType: "SwiftUI - iOS & watchOS App",
     date: "03/2021",
@@ -445,8 +423,7 @@ String color3 = generateColor("i am a different string");
     },
   },
   {
-    body:
-      "Draw Animation is a simple iOS App built with UIKit. It draws circles and rectangles to the screen. You can save the screen and use it as your wallpaper.",
+    body: "Draw Animation is a simple iOS App built with UIKit. It draws circles and rectangles to the screen. You can save the screen and use it as your wallpaper.",
     title: "Draw Animation",
     projectType: "iOS App",
     date: "03/2021",
@@ -457,8 +434,7 @@ String color3 = generateColor("i am a different string");
     },
   },
   {
-    body:
-      "Sponty is a social media platform that lets people with similar interests organize and join spontaneous events. I am a Co-Founder of Sponty. Sponty is using Flutter for the Mobile App, the React.js for the Web Page, Firebase, Google Cloud, and Node.js for the Back-End.",
+    body: "Sponty is a social media platform that lets people with similar interests organize and join spontaneous events. I am a Co-Founder of Sponty. Sponty was developed using Flutter, React.js, Firebase, Google Cloud, and Node.js.",
     title: "Sponty",
     projectType: "Flutter App",
     date: "09/2020 - present",
@@ -473,8 +449,7 @@ String color3 = generateColor("i am a different string");
     },
   },
   {
-    body:
-      "Simple Notes is an iOS app built with UIKit. I built both the server and the iOS app. The server is a REST API built with Express.js, MongoDB, Passport.js, tsoa, and TypeScript.",
+    body: "Simple Notes is an iOS app built with UIKit. I built both the server and the iOS app. The server is a REST API built with Express.js, MongoDB, Passport.js, tsoa, and TypeScript.",
     title: "Simple Notes",
     projectType: "iOS App & Express.js Server",
     date: "04/2021 - 05/2021",

@@ -82,21 +82,29 @@ export default function About() {
       </li>
       <li>
         I am enthusiastic about open-source software and I like to develop
-        open-source packages. I have published 5 open-source software packages
-        on{" "}
+        open-source packages. I have published several open-source software
+        packages on{" "}
         <a
-          href="https://www.npmjs.com"
+          href="https://www.npmjs.com/~iberatkaya"
           target="_blank"
           rel="noopener noreferrer"
         >
           npm
         </a>
         ,{" "}
-        <a href="https://pub.dev" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://pub.dev/packages?q=email%3Aibraberatkaya%40gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           pub.dev
         </a>
         , and{" "}
-        <a href="https://crates.io" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://crates.io/users/iberatkaya"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           crates.io
         </a>
         .
@@ -117,6 +125,8 @@ export default function About() {
         <li style={listItemStyle}>Learning From Data</li>
         <li style={listItemStyle}>Database Systems</li>
         <li style={listItemStyle}>Digital Circuits</li>
+        <li style={listItemStyle}>Secure Programming</li>
+        <li style={listItemStyle}>Functional Programming</li>
       </ul>
     </p>,
     <p>
@@ -150,7 +160,15 @@ export default function About() {
               writing.
             </li>
             <li>
-              I have written 2 Medium Articles and I occasionally write on{" "}
+              I have written several{" "}
+              <a
+                href="https://iberatkaya.medium.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Medium articles
+              </a>{" "}
+              and I occasionally write on{" "}
               <a
                 href="https://www.reddit.com/user/iberatkaya"
                 target="_blank"
