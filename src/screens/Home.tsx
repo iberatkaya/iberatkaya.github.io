@@ -37,19 +37,11 @@ export default function Home() {
             <Zoom triggerOnce direction="left" duration={750}>
               <Card>
                 <Card.Body>
-                  <div style={{ fontSize: "1.2rem" }}>
+                  <div style={{ fontSize: "1.1rem", maxWidth: 450 }}>
                     Hello, I am Ibrahim Berat Kaya. Welcome to my portfolio!
-                    <br />I am a senior computer engineering student at{" "}
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="https://www.itu.edu.tr"
-                    >
-                      ITU
-                    </a>
-                    .
-                    <br />
-                    Checkout <a href="#/projects">my projects</a> and{" "}
+                    <br />I am a Software Developer. Checkout{" "}
+                    <a href="#/projects">my projects</a>,{" "}
+                    <a href="#/experience">my work experience</a>, and{" "}
                     <a href="#/about">learn more</a> about me.
                   </div>
                 </Card.Body>

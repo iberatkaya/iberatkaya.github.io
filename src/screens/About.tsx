@@ -44,9 +44,18 @@ export default function About() {
 
   const nodes: React.ReactNode[] = [
     <p>
-      {"Hello. My name is Ibrahim Berat Kaya. I study Computer Engineering at Istanbul Technical University and I am in my senior year. I am from State College, PA, USA. I am " +
-        _calculateYearDiff(new Date(1998, 10, 26)).toString() +
-        " years old. I currently reside in Istanbul, Turkey."}
+      Hello. My name is Ibrahim Berat Kaya. I got my Bachelor's Degree in
+      Computer Engineering at{" "}
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.itu.edu.tr"
+      >
+        Istanbul Technical University
+      </a>
+      . I am from State College, PA, USA. I am
+      {" " + _calculateYearDiff(new Date(1998, 10, 26)).toString() + " "} years
+      old. I currently reside in Istanbul, Turkey.
     </p>,
     <ul>
       <li>
