@@ -114,7 +114,12 @@ export default function ProjectCard(props: Props) {
                 )}
               </div>
               <LazyLoad>
-                <Carousel autoPlay={true} interval={6000} infiniteLoop={true}>
+                <Carousel
+                  autoPlay={true}
+                  interval={6000}
+                  infiniteLoop={true}
+                  dynamicHeight
+                >
                   {props.project.image.map((i) => (
                     <ImageZoom>
                       <picture>

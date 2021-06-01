@@ -19,6 +19,7 @@ import GitWatchImgs from "../imgs/git_watch/imgs";
 import DrawAnimationImgs from "../imgs/draw_animation/imgs";
 import SpontyImgs from "../imgs/sponty/imgs";
 import NotesImgs from "../imgs/notes/imgs";
+import WWDC21Imgs from "../imgs/wwdc21/imgs";
 import { Project } from "../interfaces/project";
 
 export const myprojects: Project[] = [
@@ -460,6 +461,17 @@ String color3 = generateColor("i am a different string");
       appstore:
         "https://apps.apple.com/us/app/simple-notes-save-notes/id1566712582",
       weburl: "https://ibk-note-app.herokuapp.com/docs/",
+    },
+  },
+  {
+    body: "My accepted Apple WWDC 2021 submission named Music Theory and Math. It is an educational Swift Playground that teaches about the Math behind Music Theory. It was built with SwiftUI and Swift Plagrounds.",
+    title: "WWDC21 Accepted Submission",
+    projectType: "SwiftUI & Swift Playgrounds App",
+    date: "04/2020",
+    imagePadding: "0",
+    image: WWDC21Imgs,
+    links: {
+      github: "https://github.com/iberatkaya/wwdc21",
     },
   },
 ].reverse();
