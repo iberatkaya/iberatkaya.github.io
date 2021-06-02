@@ -72,14 +72,11 @@ export default function NavBar() {
           </Nav.Link>
           <Nav.Link
             style={iconLinkStyle}
-            onClick={() => {
-              alert(
-                "Please note that currently share my Apple Developer account with my developer friend Selim.\nYou may find my apps with the copyright IBK Apps©."
-              );
+            onClick={() =>
               launchLink(
-                "https://apps.apple.com/us/developer/selim-ustel/id1498230191"
-              );
-            }}
+                "https://apps.apple.com/us/developer/ibrahim-berat-kaya/id1570498091"
+              )
+            }
           >
             <FaAppStore size={iconSize} />
           </Nav.Link>
