@@ -1,8 +1,8 @@
 import GMCImg from "../imgs/experience/gmc.png";
 import NacsoftImg from "../imgs/experience/nacsoft.png";
 import ACMImg from "../imgs/experience/acm.png";
-import SimitLabImg from "../imgs/experience/s.png";
 import SpontyImg from "../imgs/experience/sponty.png";
+import SezzleImg from "../imgs/experience/sezzle.png";
 import { Experience as IExperience } from "../interfaces/experience";
 
 export const experiences: IExperience[] = [
@@ -39,17 +39,6 @@ export const experiences: IExperience[] = [
     renderAsHTML: true,
   },
   {
-    title: "Undergraduate Researcher",
-    date: "March 2020 - Present",
-    description:
-      'Working on my Graduation Project which is "Face Mask Detection On Public Transportation" with my advisor Prof. Dr. Hazım Kemal EKENEL.',
-    location: "Istanbul, Turkey",
-    subtitle: "SiMiT Lab",
-    image: SimitLabImg,
-    companyLink: "https://simitlab.itu.edu.tr",
-    renderAsHTML: false,
-  },
-  {
     title: "Co-Founder & Software Developer",
     date: "September 2020 - Present",
     description:
@@ -58,6 +47,17 @@ export const experiences: IExperience[] = [
     subtitle: "Sponty",
     image: SpontyImg,
     companyLink: "https://sponty.app",
+    renderAsHTML: true,
+  },
+  {
+    title: "Junior Mobile Engineer",
+    date: "July 2021 - Present",
+    description:
+      'Sezzle is a platform that empowers shoppers to purchase today, and make 4 interest-free payments over 6 weeks. Sezzle is available on the <a href="https://itunes.apple.com/us/app/sezzle/id1434922495" target="_blank" rel="noopener noreferrer">App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.sezzle.sezzlemobile" target="_blank" rel="noopener noreferrer">Play Store</a>. I am developing the Sezzle app with React Native, TypeScript, and Redux.',
+    location: "Minneapolis, MN, USA",
+    subtitle: "Sezzle",
+    image: SezzleImg,
+    companyLink: "https://sezzle.com",
     renderAsHTML: true,
   },
 ].reverse();

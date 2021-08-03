@@ -55,7 +55,7 @@ export default function About() {
       </a>
       . I am from State College, PA, USA. I am
       {" " + _calculateYearDiff(new Date(1998, 10, 26)).toString() + " "} years
-      old. I currently reside in Istanbul, Turkey.
+      old. I currently reside in Minneapolis, MN, USA.
     </p>,
     <ul>
       <li>
