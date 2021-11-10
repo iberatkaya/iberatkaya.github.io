@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import "./ProjectCard.css";
+import "./styles.css";
 import {
   FaGlobe,
   FaAppStore,
@@ -19,7 +19,7 @@ import { isMobile } from "react-device-detect";
 import LazyLoad from "react-lazyload";
 import ImageZoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
-import { Project } from "../interfaces/project";
+import { Project } from "../../interfaces/project";
 
 interface Props {
   project: Project;

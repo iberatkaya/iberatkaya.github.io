@@ -1,9 +1,9 @@
-import GMCImg from "../imgs/experience/gmc.png";
-import NacsoftImg from "../imgs/experience/nacsoft.png";
-import ACMImg from "../imgs/experience/acm.png";
-import SpontyImg from "../imgs/experience/sponty.png";
-import SezzleImg from "../imgs/experience/sezzle.png";
-import { Experience as IExperience } from "../interfaces/experience";
+import GMCImg from "../../imgs/experience/gmc.png";
+import NacsoftImg from "../../imgs/experience/nacsoft.png";
+import ACMImg from "../../imgs/experience/acm.png";
+import SpontyImg from "../../imgs/experience/sponty.png";
+import SezzleImg from "../../imgs/experience/sezzle.png";
+import { Experience as IExperience } from "../../interfaces/experience";
 
 export const experiences: IExperience[] = [
   {
@@ -42,7 +42,7 @@ export const experiences: IExperience[] = [
     title: "Co-Founder & Software Developer",
     date: "September 2020 - Present",
     description:
-      '<p>Sponty is a social media platform that lets people with similar interests organize and join spontaneous events. Sponty is available on the <a href="https://apps.apple.com/us/app/sponty-spontaneous-events/id1558525532" target="_blank" rel="noopener noreferrer">App Store</a> and the <a href="https://play.google.com/store/apps/details?id=com.sponty.android" target="_blank" rel="noopener noreferrer">Play Store</a>.</p> <p>I am one of the founding members of Sponty. Sponty is being developed using Flutter, React.js, Firebase, Google Cloud, and Node.js.</p><p>Features:<ul><li>Users can record videos to create and join events.</li><li>Users in the same event can chat.</li><li>Users can see events and other users on the map.</li></ul></p>',
+      '<p>Sponty is a social media platform that lets people with similar interests organize and join spontaneous events. Sponty is available on the <a href="https://apps.apple.com/us/app/sponty-spontaneous-events/id1558525532" target="_blank" rel="noopener noreferrer">App Store</a> and the <a href="https://play.google.com/store/apps/details?id=com.sponty.android" target="_blank" rel="noopener noreferrer">Play Store</a>.</p> <p>I am one of the founding members of Sponty. Sponty is being developed using Flutter, React.js, Firebase, Google Cloud, Mapbox, and Node.js.</p><p>Features:<ul><li>Users can record videos to create and join events.</li><li>Users in the same event can chat.</li><li>Users can see events and other users on the map.</li></ul></p>',
     location: "Istanbul, Turkey",
     subtitle: "Sponty",
     image: SpontyImg,
@@ -50,10 +50,10 @@ export const experiences: IExperience[] = [
     renderAsHTML: true,
   },
   {
-    title: "Junior Mobile Engineer",
+    title: "Mobile Engineer II",
     date: "July 2021 - Present",
     description:
-      'Sezzle is a platform that empowers shoppers to purchase today, and make 4 interest-free payments over 6 weeks. Sezzle is available on the <a href="https://itunes.apple.com/us/app/sezzle/id1434922495" target="_blank" rel="noopener noreferrer">App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.sezzle.sezzlemobile" target="_blank" rel="noopener noreferrer">Play Store</a>. I am developing the Sezzle app with React Native, TypeScript, and Redux.',
+      '<p>Sezzle is a platform that empowers shoppers to purchase today, and make 4 interest-free payments over 6 weeks.</p><p>I am part of the <b>Mobile Core</b> team. My responsibilities include app releases, CI/CD, code reviews, and testing. The Sezzle app is developed with React Native, TypeScript, Redux, and Redux Sagas. Sezzle is available on the <a href="https://itunes.apple.com/us/app/sezzle/id1434922495" target="_blank" rel="noopener noreferrer">App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.sezzle.sezzlemobile" target="_blank" rel="noopener noreferrer">Play Store</a>.</p>',
     location: "Minneapolis, MN, USA",
     subtitle: "Sezzle",
     image: SezzleImg,

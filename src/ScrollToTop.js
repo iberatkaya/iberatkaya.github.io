@@ -1,8 +1,8 @@
 //Taken from https://stackoverflow.com/a/54343182
 //@author zurfyx https://stackoverflow.com/users/2013580/zurfyx
 
-import { useEffect } from 'react';
-import { withRouter } from 'react-router-dom';
+import { useEffect } from "react";
+import { withRouter } from "react-router-dom";
 
 function ScrollToTop({ history }) {
   useEffect(() => {
@@ -11,10 +11,10 @@ function ScrollToTop({ history }) {
     });
     return () => {
       unlisten();
-    }
+    };
   }, []);
 
-  return (null);
+  return null;
 }
 
 export default withRouter(ScrollToTop);

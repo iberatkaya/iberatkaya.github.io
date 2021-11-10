@@ -1,10 +1,10 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
-import ProjectCard from "../components/ProjectCard";
+import ProjectCard from "../../components/ProjectCard";
 import Row from "react-bootstrap/Row";
 import { isMobile } from "react-device-detect";
 import { Slide } from "react-awesome-reveal";
-import { myprojects } from "../projects/projects";
+import { myprojects } from "../../projects/projects";
 
 export default function Projects() {
   return (

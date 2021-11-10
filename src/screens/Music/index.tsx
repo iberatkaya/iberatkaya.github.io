@@ -4,9 +4,9 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
-import Guitar from "../music/guitar/audio";
-import "./Music.css";
-import Keyboard from "../music/keyboard/audio";
+import Guitar from "../../music/guitar/audio";
+import "./styles.css";
+import Keyboard from "../../music/keyboard/audio";
 import { Fade } from "react-awesome-reveal";
 
 export default function Music() {

@@ -5,7 +5,6 @@ import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import { isMobile } from "react-device-detect";
 import Image from "react-bootstrap/Image";
-import me from "../imgs/me.jpg";
 import { Fade } from "react-awesome-reveal";
 
 export default function About() {
@@ -24,12 +23,6 @@ export default function About() {
     const ageDifMs = Date.now() - date.getTime();
     const ageDate = new Date(ageDifMs);
     return Math.abs(ageDate.getUTCFullYear() - 1970);
-  };
-
-  const _calculateMonthDiff = (date: Date) => {
-    let months = (new Date().getFullYear() - date.getFullYear()) * 12;
-    months += new Date().getMonth() - date.getMonth() + 1;
-    return months;
   };
 
   const card = (text: React.ReactNode, delay: number) => (
@@ -54,7 +47,7 @@ export default function About() {
         Istanbul Technical University
       </a>
       . I am from State College, PA, USA. I am
-      {" " + _calculateYearDiff(new Date(1998, 10, 26)).toString() + " "} years
+      {" " + _calculateYearDiff(new Date(1998, 9, 26)).toString() + " "} years
       old. I currently reside in Minneapolis, MN, USA.
     </p>,
     <ul>
@@ -228,7 +221,7 @@ export default function About() {
                       alignItems: "center",
                     }}
                   >
-                    <Col xs={8} md={2} style={{ marginBottom: "2vh" }}>
+                    <Col xs={8} md={3} style={{ marginBottom: "2vh" }}>
                       <Fade triggerOnce direction="left" delay={0}>
                         <Image
                           src={"https://github.com/iberatkaya.png?size=400"}
