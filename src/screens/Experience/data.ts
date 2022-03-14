@@ -40,7 +40,7 @@ export const experiences: IExperience[] = [
   },
   {
     title: "Co-Founder & Software Developer",
-    date: "September 2020 - Present",
+    date: "Sep 2020 - Present",
     description:
       '<p>Sponty is a social media platform that lets people with similar interests organize and join spontaneous events. Sponty is available on the <a href="https://apps.apple.com/us/app/sponty-spontaneous-events/id1558525532" target="_blank" rel="noopener noreferrer">App Store</a> and the <a href="https://play.google.com/store/apps/details?id=com.sponty.android" target="_blank" rel="noopener noreferrer">Play Store</a>.</p> <p>I am one of the founding members of Sponty. Sponty is being developed using Flutter, React.js, Firebase, Google Cloud, Mapbox, and Node.js.</p><p>Features:<ul><li>Users can record videos to create and join events.</li><li>Users in the same event can chat.</li><li>Users can see events and other users on the map.</li></ul></p>',
     location: "Istanbul, Turkey",
@@ -51,9 +51,20 @@ export const experiences: IExperience[] = [
   },
   {
     title: "Mobile Engineer II",
-    date: "July 2021 - Present",
+    date: "July 2021 - Jan 2022",
     description:
-      '<p>Sezzle is a platform that empowers shoppers to purchase today, and make 4 interest-free payments over 6 weeks.</p><p>I am part of the <b>Mobile Core</b> team. My responsibilities include app releases, CI/CD, code reviews, and testing. The Sezzle app is developed with React Native, TypeScript, Redux, and Redux Sagas. Sezzle is available on the <a href="https://itunes.apple.com/us/app/sezzle/id1434922495" target="_blank" rel="noopener noreferrer">App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.sezzle.sezzlemobile" target="_blank" rel="noopener noreferrer">Play Store</a>.</p>',
+      "<p>I was part of the Mobile Core team during this position until I was promoted. My responsibilities included app releases, new features, CI/CD, code reviews, and testing.</p>",
+    location: "Minneapolis, MN, USA",
+    subtitle: "Sezzle",
+    image: SezzleImg,
+    companyLink: "https://sezzle.com",
+    renderAsHTML: true,
+  },
+  {
+    title: "Senior Mobile Engineer",
+    date: "Jan 2022 - Present",
+    description:
+      '<p>Sezzle is a platform that empowers shoppers to purchase today, and make 4 interest-free payments over 6 weeks.</p><p>I am part of the <b>Mobile Core</b> team. My responsibilities include app releases, CI/CD, code reviews, and testing. The Sezzle app is developed with React Native, TypeScript, Redux, and Redux Sagas. Sezzle is available on the <a href="https://itunes.apple.com/us/app/sezzle/id1434922495" target="_blank" rel="noopener noreferrer">App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.sezzle.sezzlemobile" target="_blank" rel="noopener noreferrer">Play Store</a>. The Sezzle app has <b>one million</b> active users and is available in several countries.</p>',
     location: "Minneapolis, MN, USA",
     subtitle: "Sezzle",
     image: SezzleImg,
