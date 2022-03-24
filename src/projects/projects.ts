@@ -20,6 +20,7 @@ import DrawAnimationImgs from "../imgs/draw_animation/imgs";
 import SpontyImgs from "../imgs/sponty/imgs";
 import NotesImgs from "../imgs/notes/imgs";
 import WWDC21Imgs from "../imgs/wwdc21/imgs";
+import WeatherAppImgs from "../imgs/weather_app/imgs";
 import { Project } from "../interfaces/project";
 
 export const myprojects: Project[] = [
@@ -472,6 +473,31 @@ String color3 = generateColor("i am a different string");
     image: WWDC21Imgs,
     links: {
       github: "https://github.com/iberatkaya/wwdc21",
+    },
+  },
+  {
+    body: "Simple Notes is an iOS app built with UIKit. I built both the server and the iOS app. The server is a REST API built with Express.js, MongoDB, Passport.js, tsoa, and TypeScript.",
+    title: "Simple Notes",
+    projectType: "iOS App & Express.js Server",
+    date: "03/2022",
+    imagePadding: "0",
+    image: NotesImgs,
+    links: {
+      github: "https://github.com/iberatkaya/notes-server",
+      appstore:
+        "https://apps.apple.com/us/app/simple-notes-save-notes/id1566712582",
+      weburl: "https://ibk-note-app.herokuapp.com/docs/",
+    },
+  },
+  {
+    body: "Weather App is a simple UIKit app that displays the weather forecast. The app is built with programatic UI, Combine, and Auto Layout with a MVVM architecture. The forecast is fetched from the National Weather Service API.",
+    title: "Weather App",
+    projectType: "UIKit & Combine",
+    date: "04/2020",
+    imagePadding: "0",
+    image: WeatherAppImgs,
+    links: {
+      github: "https://github.com/iberatkaya/weather-uikit",
     },
   },
 ].reverse();
