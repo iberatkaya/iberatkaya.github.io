@@ -35,7 +35,7 @@ export const experiences: IExperience[] = [
     image: GMCImg,
     location: "Istanbul, Turkey",
     subtitle: "GMC Teknoloji",
-    companyLink: "http://gmcteknoloji.com/",
+    companyLink: "https://www.linkedin.com/company/gmc-tech/about/",
     renderAsHTML: true,
   },
   {
