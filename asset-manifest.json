@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.6d1ca886.chunk.css",
-    "main.js": "/static/js/main.db5275a9.chunk.js",
-    "main.js.map": "/static/js/main.db5275a9.chunk.js.map",
+    "main.js": "/static/js/main.61133512.chunk.js",
+    "main.js.map": "/static/js/main.61133512.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e78fe6ae.js",
     "runtime-main.js.map": "/static/js/runtime-main.e78fe6ae.js.map",
     "static/css/2.dc69307c.chunk.css": "/static/css/2.dc69307c.chunk.css",
     "static/js/2.e17f2a48.chunk.js": "/static/js/2.e17f2a48.chunk.js",
     "static/js/2.e17f2a48.chunk.js.map": "/static/js/2.e17f2a48.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0eed27bc0c2d296b4d46b26edb5e5280.js": "/precache-manifest.0eed27bc0c2d296b4d46b26edb5e5280.js",
+    "precache-manifest.b1eb56813bc1f5142322bfd232c703e6.js": "/precache-manifest.b1eb56813bc1f5142322bfd232c703e6.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.dc69307c.chunk.css.map": "/static/css/2.dc69307c.chunk.css.map",
     "static/css/main.6d1ca886.chunk.css.map": "/static/css/main.6d1ca886.chunk.css.map",
@@ -52,11 +52,11 @@
     "static/media/9.png": "/static/media/9.1b856515.png",
     "static/media/9.m4a": "/static/media/9.fd35d4ff.m4a",
     "static/media/blur.png": "/static/media/blur.cc41bb1b.png",
-    "static/media/img1.png": "/static/media/img1.be62eb29.png",
-    "static/media/img2.png": "/static/media/img2.a9297b5e.png",
+    "static/media/img1.png": "/static/media/img1.3002d880.png",
+    "static/media/img2.png": "/static/media/img2.23ebe78b.png",
     "static/media/img3.png": "/static/media/img3.1dfa622b.png",
     "static/media/img4.png": "/static/media/img4.589f9799.png",
-    "static/media/img5.png": "/static/media/img5.42c7db41.png",
+    "static/media/img5.png": "/static/media/img5.e3206810.png",
     "static/media/logo.png": "/static/media/logo.7f5dd645.png",
     "static/media/normal.png": "/static/media/normal.cbab6c9c.png",
     "static/media/recording.mp4": "/static/media/recording.81d131e8.mp4",
@@ -69,6 +69,6 @@
     "static/css/2.dc69307c.chunk.css",
     "static/js/2.e17f2a48.chunk.js",
     "static/css/main.6d1ca886.chunk.css",
-    "static/js/main.db5275a9.chunk.js"
+    "static/js/main.61133512.chunk.js"
   ]
 }
