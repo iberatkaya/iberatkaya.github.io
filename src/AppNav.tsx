@@ -7,6 +7,7 @@ import About from "./screens/About";
 import Experience from "./screens/Experience";
 import Music from "./screens/Music";
 import ScrollToTop from "./ScrollToTop";
+import Photography from "./screens/Photography";
 
 export default function App() {
   return (
@@ -24,6 +25,9 @@ export default function App() {
       </Route>
       <Route path="/music">
         <Music />
+      </Route>
+      <Route path="/photography">
+        <Photography />
       </Route>
       <Route exact path="/">
         <Home />

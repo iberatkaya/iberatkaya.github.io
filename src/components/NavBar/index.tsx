@@ -3,7 +3,6 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { isMobile } from "react-device-detect";
 import {
-  FaTwitter,
   FaLinkedinIn,
   FaGithub,
   FaAppStore,
@@ -11,7 +10,7 @@ import {
   FaIdCard,
   FaMusic,
   FaMediumM,
-  FaReddit,
+  FaCamera,
 } from "react-icons/fa";
 
 export default function NavBar() {
@@ -92,24 +91,15 @@ export default function NavBar() {
           </Nav.Link>
           <Nav.Link
             style={iconLinkStyle}
-            onClick={() => launchLink("https://www.reddit.com/user/iberatkaya")}
-          >
-            <FaReddit size={iconSize} />
-          </Nav.Link>
-          <Nav.Link
-            style={iconLinkStyle}
-            onClick={() => launchLink("https://twitter.com/iberatkaya")}
-          >
-            <FaTwitter size={iconSize} />
-          </Nav.Link>
-          <Nav.Link
-            style={iconLinkStyle}
             onClick={() => launchLink("https://medium.com/@iberatkaya")}
           >
             <FaMediumM size={iconSize} />
           </Nav.Link>
           <Nav.Link style={iconLinkStyle} href="#/music">
             <FaMusic size={iconSize} />
+          </Nav.Link>
+          <Nav.Link style={iconLinkStyle} href="#/photography">
+            <FaCamera size={iconSize} />
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>

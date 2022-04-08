@@ -148,37 +148,10 @@ export default function About() {
           </ul>
         </li>
         <li>
-          <a
-            href="https://iberatkaya.medium.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Writing
-          </a>
-          :
+          <a href="#/photography">Photography</a>:
           <ul>
             <li>
-              I enjoy teaching others about the stuff I learn and I like
-              writing.
-            </li>
-            <li>
-              I have written several{" "}
-              <a
-                href="https://iberatkaya.medium.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Medium articles
-              </a>{" "}
-              and I occasionally write on{" "}
-              <a
-                href="https://www.reddit.com/user/iberatkaya"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Reddit
-              </a>
-              .
+              Check out some of my photos <a href="#/photography">here</a>!
             </li>
           </ul>
         </li>

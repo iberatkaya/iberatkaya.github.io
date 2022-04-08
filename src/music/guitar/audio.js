@@ -14,23 +14,26 @@ import audio13 from "./13.m4a";
 import audio14 from "./14.m4a";
 import audio15 from "./15.m4a";
 import audio16 from "./16.m4a";
+import yourPower from "./yourpower.mp3";
 
 const audios = [
-  audio1,
-  audio2,
-  audio3,
-  audio4,
-  audio5,
-  audio6,
-  audio7,
-  audio8,
-  audio9,
-  audio10,
-  audio11,
-  audio12,
-  audio13,
-  audio14,
-  audio15,
-  audio16,
+  {item: yourPower, name: "Your Power"},
+  {item: audio1, name: "1"},
+  {item: audio2, name: "2"},
+  {item: audio3, name: "3"},
+  {item: audio4, name: "4"},
+  {item: audio5, name: "5"},
+  {item: audio6, name: "6"},
+  {item: audio7, name: "7"},
+  {item: audio8, name: "8"},
+  {item: audio9, name: "9"},
+  {item: audio10, name: "10"},
+  {item: audio11, name: "11"},
+  {item: audio12, name: "12"},
+  {item: audio13, name: "13"},
+  {item: audio14, name: "14"},
+  {item: audio15, name: "15"},
+  {item: audio16, name: "16"},
 ];
+
 export default audios;

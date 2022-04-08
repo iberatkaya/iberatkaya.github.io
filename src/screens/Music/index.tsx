@@ -51,11 +51,11 @@ export default function Music() {
                           }}
                           className="SongLink"
                           style={
-                            song === i ? { backgroundColor: "#cccccc" } : {}
+                            song.item === i.item ? { backgroundColor: "#cccccc" } : {}
                           }
                         >
                           <div style={{ padding: 8 }}>
-                            {(index + 1).toString() + ".m4a"}
+                            {i.name + ".m4a"}
                           </div>
                           <div
                             style={{ borderBottom: "1px solid black" }}
@@ -84,11 +84,11 @@ export default function Music() {
                           }}
                           className="SongLink"
                           style={
-                            song === i ? { backgroundColor: "#cccccc" } : {}
+                            song.item === i.item ? { backgroundColor: "#cccccc" } : {}
                           }
                         >
                           <div style={{ padding: 8 }}>
-                            {(index + 1).toString() + ".m4a"}
+                            {i.name + ".m4a"}
                           </div>
                           <div
                             style={{ borderBottom: "1px solid black" }}
@@ -100,7 +100,7 @@ export default function Music() {
                   <Row style={{ justifyContent: "center" }}>
                     <ReactAudioPlayer
                       style={{ marginTop: 12 }}
-                      src={song}
+                      src={song.item}
                       autoPlay
                       controls
                       preload="metadata"

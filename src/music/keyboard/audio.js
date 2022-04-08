@@ -4,9 +4,10 @@ import audio3 from "./3.m4a";
 import audio4 from "./4.m4a";
 
 const audios = [
-    audio1,
-    audio2,
-    audio3,
-    audio4,
-]
+    {item: audio1, name: "1"},
+    {item: audio2, name: "2"},
+    {item: audio3, name: "3"},
+    {item: audio4, name: "4"},
+];
+
 export default audios;
