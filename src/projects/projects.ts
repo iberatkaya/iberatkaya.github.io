@@ -21,6 +21,7 @@ import SpontyImgs from "../imgs/sponty/imgs";
 import NotesImgs from "../imgs/notes/imgs";
 import WWDC21Imgs from "../imgs/wwdc21/imgs";
 import WeatherAppImgs from "../imgs/weather_app/imgs";
+import RisingTemperaturesImgs from "../imgs/rising_temperatures/imgs";
 import { Project } from "../interfaces/project";
 
 export const myprojects: Project[] = [
@@ -468,7 +469,7 @@ String color3 = generateColor("i am a different string");
     body: "My accepted Apple WWDC 2021 submission named Music Theory and Math. It is an educational Swift Playground that teaches about the Math behind Music Theory. It was built with SwiftUI and Swift Plagrounds.",
     title: "WWDC21 Accepted Submission",
     projectType: "SwiftUI & Swift Playgrounds App",
-    date: "04/2020",
+    date: "04/2021",
     imagePadding: "0",
     image: WWDC21Imgs,
     links: {
@@ -493,11 +494,22 @@ String color3 = generateColor("i am a different string");
     body: "Weather App is a simple UIKit app that displays the weather forecast. The app is built with programatic UI, Combine, and Auto Layout with a MVVM architecture. The forecast is fetched from the National Weather Service API.",
     title: "Weather App",
     projectType: "UIKit & Combine",
-    date: "04/2020",
+    date: "04/2022",
     imagePadding: "0",
     image: WeatherAppImgs,
     links: {
       github: "https://github.com/iberatkaya/weather-uikit",
+    },
+  },
+  {
+    body: "Rising Temperatures is an app aiming to display the rising temperatures visually around the world. Interact with the map, click on cities, and view the change in temperatures! The data was collected by Berkeley Earth. The app is built with programatic UI, Combine, and Auto Layout with a MVVM architecture.",
+    title: "Rising Temperatures",
+    projectType: "Swift & UIKit",
+    date: "05/2022",
+    imagePadding: "0",
+    image: RisingTemperaturesImgs,
+    links: {
+      github: "https://github.com/iberatkaya/rising-temperatures",
     },
   },
 ].reverse();
