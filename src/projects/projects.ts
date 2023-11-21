@@ -22,6 +22,9 @@ import NotesImgs from "../imgs/notes/imgs";
 import WWDC21Imgs from "../imgs/wwdc21/imgs";
 import WeatherAppImgs from "../imgs/weather_app/imgs";
 import RisingTemperaturesImgs from "../imgs/rising_temperatures/imgs";
+import FecAppImgs from "../imgs/fec_app/imgs";
+import ConcertPrepImgs from "../imgs/concert_prep/imgs";
+import NYTMovie from "../imgs/nyt_movie/imgs";
 import { Project } from "../interfaces/project";
 
 export const myprojects: Project[] = [
@@ -218,7 +221,6 @@ image.write_image("./test.bmp");
     links: {
       playstore:
         "https://play.google.com/store/apps/details?id=com.kaya.robotduel",
-      appstore: "https://apps.apple.com/us/app/robot-duel-fight/id1511433623",
       github: "https://github.com/iberatkaya/Robot-Duel",
       weburl: "https://iberatkaya.github.io/Robot-Duel/#/",
     },
@@ -365,9 +367,6 @@ Future<void> next() async {
     date: "12/2018, 12/2020",
     image: MusicScalesImgs,
     links: {
-      playstore:
-        "https://play.google.com/store/apps/details?id=com.kaya.musicapp",
-      appstore: "https://apps.apple.com/us/app/music-scales/id1498463498",
       github: "https://github.com/iberatkaya/music-scales",
     },
   },
@@ -460,9 +459,6 @@ String color3 = generateColor("i am a different string");
     image: NotesImgs,
     links: {
       github: "https://github.com/iberatkaya/notes-server",
-      appstore:
-        "https://apps.apple.com/us/app/simple-notes-save-notes/id1566712582",
-      weburl: "https://ibk-note-app.herokuapp.com/docs/",
     },
   },
   {
@@ -474,20 +470,6 @@ String color3 = generateColor("i am a different string");
     image: WWDC21Imgs,
     links: {
       github: "https://github.com/iberatkaya/wwdc21",
-    },
-  },
-  {
-    body: "Simple Notes is an iOS app built with UIKit. I built both the server and the iOS app. The server is a REST API built with Express.js, MongoDB, Passport.js, tsoa, and TypeScript.",
-    title: "Simple Notes",
-    projectType: "iOS App & Express.js Server",
-    date: "03/2022",
-    imagePadding: "0",
-    image: NotesImgs,
-    links: {
-      github: "https://github.com/iberatkaya/notes-server",
-      appstore:
-        "https://apps.apple.com/us/app/simple-notes-save-notes/id1566712582",
-      weburl: "https://ibk-note-app.herokuapp.com/docs/",
     },
   },
   {
@@ -510,6 +492,39 @@ String color3 = generateColor("i am a different string");
     image: RisingTemperaturesImgs,
     links: {
       github: "https://github.com/iberatkaya/rising-temperatures",
+    },
+  },
+  {
+    body: "NYT Movie Review App is a React Native app that uses NYT API to display movie reviews. Built using React Native and Redux Toolkit.",
+    title: "NYT Movie Review",
+    projectType: "React Native",
+    date: "10/2022",
+    imagePadding: "0",
+    image: NYTMovie,
+    links: {
+      github: "https://github.com/iberatkaya/nyt-movie-app",
+    },
+  },
+  {
+    body: "FEC App is an iOS app built with Swift and UIKit. It uses FEC's API to display US political campaigns and donations.",
+    title: "FEC App",
+    projectType: "Swift & UIKit",
+    date: "12/2022",
+    imagePadding: "0",
+    image: FecAppImgs,
+    links: {
+      github: "https://github.com/iberatkaya/fecApp",
+    },
+  },
+  {
+    body: "Concert Prep is an iOS app that creates playlists in Apple Music from artist's previous concerts.",
+    title: "Concert Prep",
+    projectType: "Swift & UIKit",
+    date: "05/2023",
+    imagePadding: "0",
+    image: ConcertPrepImgs,
+    links: {
+      github: "https://github.com/iberatkaya/concert-prep",
     },
   },
 ].reverse();

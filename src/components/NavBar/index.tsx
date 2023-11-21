@@ -89,18 +89,6 @@ export default function NavBar() {
           >
             <FaGooglePlay size={iconSize} />
           </Nav.Link>
-          <Nav.Link
-            style={iconLinkStyle}
-            onClick={() => launchLink("https://medium.com/@iberatkaya")}
-          >
-            <FaMediumM size={iconSize} />
-          </Nav.Link>
-          <Nav.Link style={iconLinkStyle} href="#/music">
-            <FaMusic size={iconSize} />
-          </Nav.Link>
-          <Nav.Link style={iconLinkStyle} href="#/photography">
-            <FaCamera size={iconSize} />
-          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

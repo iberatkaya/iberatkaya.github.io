@@ -61,11 +61,11 @@ export const experiences: IExperience[] = [
     renderAsHTML: true,
   },
   {
-    title: "Senior Mobile Engineer",
+    title: "Senior Mobile Engineer & Team Lead",
     date: "Jan 2022 - Present",
     description:
       '<p>Sezzle is a platform that empowers shoppers to purchase today, and make 4 interest-free payments over 6 weeks.</p><p>I am part of the <b>Mobile Core</b> team. My responsibilities include app releases, CI/CD, code reviews, and testing. The Sezzle app is developed with React Native, TypeScript, Redux, and Redux Sagas. Sezzle is available on the <a href="https://itunes.apple.com/us/app/sezzle/id1434922495" target="_blank" rel="noopener noreferrer">App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.sezzle.sezzlemobile" target="_blank" rel="noopener noreferrer">Play Store</a>. The Sezzle app has <b>one million</b> active users and is available in several countries.</p>',
-    location: "Minneapolis, MN, USA",
+    location: "Remote",
     subtitle: "Sezzle",
     image: SezzleImg,
     companyLink: "https://sezzle.com",

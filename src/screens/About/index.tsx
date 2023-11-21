@@ -48,7 +48,7 @@ export default function About() {
       </a>
       . I am from State College, PA, USA. I am
       {" " + _calculateYearDiff(new Date(1998, 9, 26)).toString() + " "} years
-      old. I currently reside in Minneapolis, MN, USA.
+      old. I currently reside in Chicago, IL, USA.
     </p>,
     <ul>
       <li>
@@ -116,17 +116,11 @@ export default function About() {
       Here are some of the courses I have taken at ITU:
       <ul style={{ columns: 2 }}>
         <li style={listItemStyle}>Object Oriented Programming</li>
-        <li style={listItemStyle}>Software Engineering</li>
         <li style={listItemStyle}>System Programming</li>
         <li style={listItemStyle}>Artificial Intelligence</li>
-        <li style={listItemStyle}>Data Structures</li>
-        <li style={listItemStyle}>Linear Algebra</li>
-        <li style={listItemStyle}>Numerical Methods</li>
         <li style={listItemStyle}>Operating Systems</li>
         <li style={listItemStyle}>Analysis of Algorithms</li>
-        <li style={listItemStyle}>Learning From Data</li>
         <li style={listItemStyle}>Database Systems</li>
-        <li style={listItemStyle}>Digital Circuits</li>
         <li style={listItemStyle}>Secure Programming</li>
         <li style={listItemStyle}>Functional Programming</li>
       </ul>
@@ -135,26 +129,19 @@ export default function About() {
       My hobbies:
       <ul>
         <li>
-          <a href="#/music">Music</a>:
+          Music:
           <ul>
             <li>
               I have been playing the guitar for{" "}
               {_calculateYearDiff(new Date(2015, 1)).toString()} years.
             </li>
             <li>
-              I have been playing the keyboard for{" "}
-              {_calculateYearDiff(new Date(2018, 1)).toString()} years.
+              I have been playing the ukulele & piano for 1 year.
+              {/* {_calculateYearDiff(new Date(2022, 1)).toString()} years. */}
             </li>
           </ul>
         </li>
-        <li>
-          <a href="#/photography">Photography</a>:
-          <ul>
-            <li>
-              Check out some of my photos <a href="#/photography">here</a>!
-            </li>
-          </ul>
-        </li>
+        <li>Photography</li>
       </ul>
     </p>,
     <p>
